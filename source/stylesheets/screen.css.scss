@@ -484,7 +484,7 @@ html, body {
   }
 
   &>h1, &>h2, &>h3, &>h4, &>h5, &>h6, &>p, &>table, &>ul, &>ol, &>aside, &>dl {
-    /*margin-right: $examples-width;*/
+    margin-right: $examples-width;
     padding: 0 $main-padding;
     box-sizing: border-box;
     display: block;
@@ -672,12 +672,8 @@ html, body {
     background-color: $code-bg;
     color: #fff;
     margin: 0;
-    /*width: $examples-width;
+    width: $examples-width;
     float:right;
-    */
-    width:100%;
-
-
     clear:right;
 
     box-sizing: border-box;
@@ -709,6 +705,17 @@ html, body {
   }
 }
 
+.documentation .content {
+  &>h1, &>h2, &>h3, &>h4, &>h5, &>h6, &>p, &>table, &>ul, &>ol, &>aside, &>dl {
+    margin-right:0!important;;
+  }
+}
+
+.documentation .content {
+  pre, blockquote {
+    width:100%!important;
+  }
+}
 ////////////////////////////////////////////////////////////////////////////////
 // RESPONSIVE DESIGN
 ////////////////////////////////////////////////////////////////////////////////
