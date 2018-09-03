@@ -46,19 +46,99 @@ html, body {
   border-radius: 40px;
   width: 20px;
 }
+.logo {
+  display: block;
+  max-width: 100%;
+  margin-top: $logo-margin;
+  margin-left:80px;
+  width:200px;
+  float:left;
+  img{
+    max-width:100%;
+  }
+}
+.toc-header{
+  height:$topbar-height;
+  width:100%;
+  position:fixed;
+  z-index:12;
+  top:0;
+  left:0;
+  background-image: linear-gradient(88deg, #5acaef, #303795);
+  .main-menu{
+    float:right;
+    width:50%;
+    margin-top:30px;
+    list-style:none;
+    position:relative;
+    li{
+      position:relative;
+      list-style:none;
+      float:left;
+      a{
+        text-decoration:none;
+        color:#fff;
+        font-size: 16px;
+        font-weight: 600;
+        padding:0 15px;
+          @extend %primary-font;
+      }
+      ul{
+      position:absolute;
+      top:15px;
+      border-radius: 5px;
+      margin-top:15px;
+      padding:0;
+      background-color: #ffffff;
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.31);
+      transform: rotateX(90deg);
+      transform-origin:top center;
+      transition:transform 0.5s;
+      &:before{
+        position:absolute;
+        top:-5px;
+        left:45%;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid #fff;
+        content:"";
+      }
+        li{
+          float:none;
+          a{
+            display:block;
+            padding:10px 15px;
+            color:#5d5d5d;
+            &:hover{
+                text-decoration:none;
+                color: #53b2e1;
 
+            }
+          }
+        }
+      }
+      &:hover ul{
+        transform: rotateX(0deg);
+        transition:transform 0.5s;
+      }
+    }
+  }
+
+}
 .toc-wrapper {
   transition: left 0.3s ease-in-out;
-
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
   overflow-y: auto;
   overflow-x: hidden;
   position: fixed;
   z-index: 30;
-  top: 0;
+  top: $topbar-height;
   left: 0;
   bottom: 0;
   width: $nav-width;
-  background-color: $nav-bg;
+  background-color:#fff;
   font-size: 13px;
   font-weight: bold;
 
@@ -71,35 +151,54 @@ html, body {
     }
   }
 
-  // This is the logo at the top of the ToC
-  .logo {
-    display: block;
-    max-width: 100%;
-    margin-bottom: $logo-margin;
-  }
-
   &>.search {
     position: relative;
 
     input {
-      background: $nav-bg;
-      border-width: 0 0 1px 0;
-      border-color: $search-box-border-color;
-      padding: 6px 0 6px 20px;
+      background: #f2f2f2;
+      border:0;
+      padding: 8px 0 6px 40px;
       box-sizing: border-box;
       margin: $nav-v-padding $nav-padding;
       width: $nav-width - ($nav-padding*2);
+      height:40px;
       outline: none;
       color: $nav-text;
-      border-radius: 0; /* ios has a default border radius */
+      border-radius: 25px; /* ios has a default border radius */
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #b3b3b3;
+        font-size:16px;
+        font-weight:400;
+        @extend %secondary-font;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: #b3b3b3;
+        font-size:16px;
+        font-weight:400;
+        @extend %secondary-font;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: #b3b3b3;
+        font-size:16px;
+        font-weight:400;
+        @extend %secondary-font;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: #b3b3b3;
+        font-size:16px;
+        font-weight:400;
+        @extend %secondary-font;
+      }
     }
 
     &:before {
       position: absolute;
-      top: 17px;
-      left: $nav-padding;
-      color: $nav-text;
-      @extend %icon-search;
+      top: 20px;
+      left: 40px;
+      width:23px;
+      height:22px;
+      content:"";
+      background:url("../images/search.png") no-repeat;
     }
   }
 
@@ -196,6 +295,64 @@ html, body {
   }
 }
 
+.main-footer{
+  overflow:auto;
+  width:100%;
+  position:relative;
+  z-index:31;
+  background-color: #525252;
+  .footer-bottom{
+    float:right;
+    color:#fff;
+    width:50%;
+    .copyright{
+      padding-right:10%;
+      float:right;
+    }
+    .footer-bottom-left{
+      float:right;
+      margin-top:14px;
+      margin-right:10%;
+      a{text-decoration:none;color:#fff;text-align:right;
+      padding-left:15px;}
+    }
+  }
+  .subfooter{
+    position:relative;
+    border-bottom:2px solid #fff;
+    width:100%;
+    height:280px;
+    .right-col{
+      width:50%;
+      float:right;
+      h3{
+        color:#fff;
+        text-transform:uppercase;
+      }
+    }
+    .main-menu{
+      width:40%;
+      margin-top:30px;
+      margin-right:10%;
+      float:left;
+      padding:0;
+
+      text-align:right;
+      list-style:none;
+      li{
+        list-style:none;
+        a{
+          text-decoration:none;
+          text-transform:uppercase;
+          color:#fff;
+          line-height:2;
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
 .toc-link, .toc-footer li {
   padding: 0 $nav-padding 0 $nav-padding;
   display: block;
@@ -249,6 +406,7 @@ html, body {
 
 .page-wrapper {
   margin-left: $nav-width;
+  margin-top: $topbar-height;
   position: relative;
   z-index: 10;
   background-color: $main-bg;
@@ -307,7 +465,6 @@ html, body {
     display: block;
   }
 }
-
 ////////////////////////////////////////////////////////////////////////////////
 // CONTENT STYLES
 ////////////////////////////////////////////////////////////////////////////////
@@ -327,11 +484,11 @@ html, body {
   }
 
   &>h1, &>h2, &>h3, &>h4, &>h5, &>h6, &>p, &>table, &>ul, &>ol, &>aside, &>dl {
-    margin-right: $examples-width;
+    /*margin-right: $examples-width;*/
     padding: 0 $main-padding;
     box-sizing: border-box;
     display: block;
-
+@extend %primary-font;
     @extend %left-col;
   }
 
@@ -345,15 +502,15 @@ html, body {
   }
 
   h1 {
-    @extend %header-font;
     font-size: 25px;
-    padding-top: 0.5em;
+    font-weight:500;
+    padding-top: 96px;
     padding-bottom: 0.5em;
     margin-bottom: $h1-margin-bottom;
-    margin-top: 2em;
-    border-top: 1px solid #ccc;
+    margin-top: 0;
+    /*border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    background-color: #fdfdfd;
+    background-color: #fdfdfd;*/
   }
 
   h1:first-child, div:first-child + h1 {
@@ -514,11 +671,13 @@ html, body {
   pre, blockquote {
     background-color: $code-bg;
     color: #fff;
-
     margin: 0;
-    width: $examples-width;
-
+    /*width: $examples-width;
     float:right;
+    */
+    width:100%;
+
+
     clear:right;
 
     box-sizing: border-box;
