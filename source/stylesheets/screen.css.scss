@@ -2,6 +2,13 @@
 @import 'normalize';
 @import 'variables';
 @import 'icon-font';
+@font-face {
+  font-family: 'Gotham';
+  src: url(../fonts/Gotham-Black.otf);
+}
+html {
+  font-family: 'Gotham'!important;
+}
 // @import 'rtl'; // uncomment to switch to RTL format
 
 /*
@@ -46,17 +53,6 @@ html, body {
   border-radius: 40px;
   width: 20px;
 }
-.logo {
-  display: block;
-  max-width: 100%;
-  margin-top: $logo-margin;
-  margin-left:80px;
-  width:200px;
-  float:left;
-  img{
-    max-width:100%;
-  }
-}
 .toc-header{
   height:$topbar-height;
   width:100%;
@@ -64,17 +60,44 @@ html, body {
   z-index:12;
   top:0;
   left:0;
-  background-image: linear-gradient(88deg, #5acaef, #303795);
+  background-color: #062339;
+  .listWrapper {
+    margin-top: 15px;
+    height: 38px;
+  }
+  .dropdown {
+    position: absolute;
+    color: black;
+    background: white;
+    width: 100%;
+    height:55px;
+    top: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    display: block;
+    .dropdown-text {
+      display: inline-block;
+      height: 38px;
+      margin-left: 35px;
+      &:hover{
+        font-weight: bold;
+        border-bottom: 2px solid black;
+      }
+    }
+  }
   .main-menu{
     float:right;
-    width:50%;
-    margin-top:30px;
+    height:50px;
+    margin-top: -30px;
     list-style:none;
     position:relative;
     li{
       position:relative;
       list-style:none;
       float:left;
+      height:46px;
+      &:hover {
+        border-bottom: 2px solid white;
+      }
       a{
         text-decoration:none;
         color:#fff;
@@ -129,19 +152,25 @@ html, body {
 }
 .toc-wrapper {
   transition: left 0.3s ease-in-out;
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+ /* box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2); */
   overflow-y: auto;
   overflow-x: hidden;
   position: fixed;
   z-index: 30;
-  top: $topbar-height;
+ /* top: $topbar-height; */
+  top: 135px;
   left: 0;
   bottom: 0;
   width: $nav-width;
   background-color:#fff;
   font-size: 13px;
   font-weight: bold;
+  border-right: 1px solid black;
+  padding-top: 42px;
 
+  .li {
+    margin-top: 5px;
+  }
   // language selector for mobile devices
   .lang-selector {
     display: none;
@@ -155,16 +184,17 @@ html, body {
     position: relative;
 
     input {
-      background: #f2f2f2;
-      border:0;
-      padding: 8px 0 6px 40px;
+      background: white;
+      border: solid 0.5px #4a4a4a;
+      padding: 8px 0 6px 19px;
       box-sizing: border-box;
       margin: $nav-v-padding $nav-padding;
-      width: $nav-width - ($nav-padding*2);
+      width: $nav-width - ($nav-padding*2) - 10px;
       height:40px;
       outline: none;
       color: $nav-text;
-      border-radius: 25px; /* ios has a default border radius */
+      /*  border-radius: 25px; */ /* ios has a default border radius */
+      border-radius: 4px;
       &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         color: #b3b3b3;
         font-size:16px;
@@ -194,11 +224,12 @@ html, body {
     &:before {
       position: absolute;
       top: 20px;
-      left: 40px;
-      width:23px;
-      height:22px;
+      left: 80%;
+      width: 20px;
+      height: 20px;
       content:"";
-      background:url("../images/search.png") no-repeat;
+      background-size: 20px 20px;
+      background-image:url("../images/search.png");
     }
   }
 
@@ -249,17 +280,41 @@ html, body {
     transition-timing-function: linear;
     transition-duration: 200ms;
   }
-
+  .toc-h1.toc-link {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .toc-link {
+    background-image: url(../images/arrow-right.png);
+    background-repeat: no-repeat;
+    background-size: 9px;
+    background-position-x: 95%;
+    background-position-y: 50%;
+  }
   // This is the currently selected ToC entry
   .toc-link.active {
-    background-color: $nav-active-bg;
-    color: $nav-active-text;
+    /* background-color: $nav-active-bg; */
+    /* color: $nav-active-text; */
+    color: #0a0724;
+    background-image: url(../images/arrow-down.png);
+    background-size: 15px;
+    background-position-x: 95%;
+    background-position-y: 50%;
   }
 
   // this is parent links of the currently selected ToC entry
   .toc-link.active-parent {
-    background-color: $nav-active-parent-bg;
-    color: $nav-active-parent-text;
+   /* background-color: $nav-active-parent-bg; 
+    color: $nav-active-parent-text; */
+    color: #0a0724;
+    background-image: url(../images/arrow-down.png);
+    background-size: 15px;
+    background-position-x: 95%;
+    background-position-y: 50%;
+  }
+  .toc-list-h1 {
+    padding-right: 30px;
+    margin-top: 44px;
   }
 
   .toc-list-h2 {
@@ -271,7 +326,15 @@ html, body {
   .toc-h2 {
     padding-left: $nav-padding + $nav-indent;
     font-size: 12px;
+    background-image: none;
   }
+
+  .toc-h2.toc-link.active { 
+    padding-left: $nav-padding + $nav-indent;
+    font-size: 12px;
+    background-image: none;
+  }
+
 
   .toc-footer {
     padding: 1em 0;
@@ -296,24 +359,37 @@ html, body {
 }
 
 .main-footer{
-  overflow:auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
   width:100%;
   position:relative;
   z-index:31;
-  background-color: #525252;
+  background-color: white;
+  color: black;
   .footer-bottom{
-    float:right;
-    color:#fff;
-    width:50%;
+    float:left;
+    align-content: center;
+    color: black;
+    width:100%;
+    margin-left: 6%;
+    margin-top: 33px;
+    margin-bottom: 32px;
     .copyright{
       padding-right:10%;
       float:right;
     }
-    .footer-bottom-left{
+    .footer-bottom-left {
+      float:left;
+      .social {
+        margin-right: 12px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .footer-bottom-right {
       float:right;
-      margin-top:14px;
       margin-right:10%;
-      a{text-decoration:none;color:#fff;text-align:right;
+      a{text-decoration:none;color:black;text-align:right;
       padding-left:15px;}
     }
   }
@@ -322,29 +398,51 @@ html, body {
     border-bottom:2px solid #fff;
     width:100%;
     height:280px;
+    img[alt="Logo beta blue"] {
+      width: 188px;
+      height: 35px;
+      margin-top: 60px; 
+    }
+    .logoWrapper {
+      float:left;
+      width: 25%;
+      margin-left: 6%;
+      .tagline {
+        margin-top: 15px;
+      }
+      .copyright {
+        margin-top: 6px;
+      }
+    }
+    .row {
+      width:100%;
+    }
     .right-col{
       width:50%;
       float:right;
       h3{
-        color:#fff;
+        color:black;
         text-transform:uppercase;
       }
     }
     .main-menu{
-      width:40%;
+      width:15%;
       margin-top:30px;
-      margin-right:10%;
-      float:left;
+      float:right;
       padding:0;
-
-      text-align:right;
+      padding-left: 10px;
+      padding-right: 10px;
+      color:black;
+      text-align:left;
       list-style:none;
       li{
+        width:150px;
         list-style:none;
+        color:black;
         a{
           text-decoration:none;
           text-transform:uppercase;
-          color:#fff;
+          color:black;
           line-height:2;
           font-size: 16px;
           font-weight: 500;
@@ -409,7 +507,8 @@ html, body {
   margin-top: $topbar-height;
   position: relative;
   z-index: 10;
-  background-color: $main-bg;
+  /* background-color: $main-bg; */
+  background-color: white;
   min-height: 100%;
 
   padding-bottom: 1px; // prevent margin overflow
@@ -420,11 +519,13 @@ html, body {
   // I know, it's hackish, but it's the simplist way to make the left
   // half of the content always this background color.
   .dark-box {
-    width: $examples-width;
+  /*  width: $examples-width; */
+    width: 50%;
     background-color: $examples-bg;
     position: absolute;
-    right: 0;
-    top: 0;
+    min-width: 310px; /* min width for lang-selector to not overflow to the next line */
+    right: 0px;
+    top: 50px;
     bottom: 0;
   }
 
@@ -445,6 +546,8 @@ html, body {
     color: $lang-select-text;
     text-decoration: none;
     padding: 0 10px;
+    padding-top: 17px;
+    padding-bottom: 17px;
     line-height: 30px;
     outline: 0;
 
@@ -475,6 +578,7 @@ html, body {
   -webkit-transform: translateZ(0);
   // to place content above the dark box
   position: relative;
+  min-width: 310px; /* min width for lang-selector to not overflow to the next line */
   z-index: 30;
 
   &:after {
@@ -484,7 +588,7 @@ html, body {
   }
 
   &>h1, &>h2, &>h3, &>h4, &>h5, &>h6, &>p, &>table, &>ul, &>ol, &>aside, &>dl {
-    margin-right: $examples-width;
+    margin-right: $left-width;
     padding: 0 $main-padding;
     box-sizing: border-box;
     display: block;
@@ -623,6 +727,7 @@ html, body {
     padding-bottom: 1em;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
+    margin-right: 50%;
     background: $aside-notice-bg;
     line-height: 1.6;
 
@@ -670,9 +775,12 @@ html, body {
 .content {
   pre, blockquote {
     background-color: $code-bg;
+    min-width: 310px; /* min width for lang-selector to not overflow to the next line */
     color: #fff;
     margin: 0;
-    width: $examples-width;
+    /*width: $examples-width; */
+    width: 46%;
+    margin-right: 18px;
     float:right;
     clear:right;
 
@@ -700,6 +808,7 @@ html, body {
     &>p {
       background-color: $code-annotation-bg;
       padding: $code-annotation-padding 2em;
+      margin-right: 0px;
       color: #eee;
     }
   }
@@ -722,9 +831,35 @@ html, body {
 // These are the styles for phones and tablets
 // There are also a couple styles disperesed
 
+/*scaling documentation content on lower widths to prevent clipping */
+@media (max-width: 1075px) {
+  .content aside {
+    margin-right: 60%;
+  }
+}
+
+@media (max-width: 1025px) {
+  .content aside {
+    margin-right: 72%;
+  }
+}
+
+@media (max-width: 930px) {
+  .content aside {
+    margin-right: 50%!important;
+  }
+}
+
+@media (max-width: 581px) {
+  .content aside {
+    margin-right: unset!important;
+  }
+}
+/*end content scaling */
+
 @media (max-width: $tablet-width) {
   .toc-wrapper {
-    left: -$nav-width;
+    left: -$nav-width - 50px;
 
     &.open {
       left: 0;

@@ -16,14 +16,18 @@
   </head>
 
   <body>
-    <div class="home__header">
+    <div class="home__header" >
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg static-top">
       <div class="container">
-        <a class="logo" href="index.html"><img src="images/logo.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <a class="logo" href="index.html"><img src="images/logo-beta-white.png"></a>
+
+        <span class="ca_hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </span>
+
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
@@ -34,80 +38,122 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html#architecture">Architecture</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="api.html">Resources</a>
-              <ul><li><a href="documentation.html">Documentation</a></li><li><a href="api.html">API</a></li></ul>
+            <li class="nav-item" style="position: relative;">
+              <a class="nav-link" href="api.html" name="Docs">Docs</a>
+                <ul>
+                  <li><a href="documentation.html">Tutorials</a></li>
+                  <li><a href="api.html">API</a></li>
+                  <li><a href="#">Pre-builts</a>
+                </ul>
             </li>
             <li class="nav-item">
-              <!--<a class="nav-link" href="#">Solutions</a>-->
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="http://developer.triniti.ai">Go to Console</a>
+              <a class="nav-link" name="consoleLink" href="http://developer.triniti.ai" style="width: 102px;">Go to Console</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <!--End Navigation-->
     <div class="container">
       <div class="row">
         <div class="col-sm-7">
-          <h1>Leading Conversational AI for Customer Engagement</h1>
-          <p class="subheader">Provide great customer experience</p>
+          <h1>
+            Leading Conversational AI
+            for Customer Engagement
+          </h1>
+          <p class="subheader"
+            >A chat or voice application that 
+            resides on a banking website for example, sends conversational 
+            input to the bank’s system. The system interacts 
+            with the Triniti. 
+          </p>
+          <button class="startPrompt">GET STARTED</div>
         </div>
         <div class="col-sm-5">
-          <img src="images/section1.png">
         </div>
       </div>
     </div>
   </div>
     <!-- Page Content -->
-    <div id="conversations" class="section">
+    <div id="operation" class="section">
+      <div class="demoButtonWrapper">
+        <div class="demoButton"></div>
+        <div class="demoButton-text"> Try our demo</div>
+      </div>
+      <div class="row header">
+        <div class="col-sm-12 container">
+          <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+              <h1 class="operationHeader">Operation of the Triniti AI engine</h1>
+              <p class="subheader">
+                Build next-generation smart applications on-premise or cloud. 
+                Interact flawlessly with advanced voice and text-based conversational interfaces.
+              </p>
+              <img src="images/triniti-section1.png" style="width: 1440px; height: 70%;">
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div id="create" class="section">
       <div class="row">
-        <div class="col-sm-4"><img src="images/section2.png"></div>
+          <div class="col-sm-4"><img src="images/create-section2.png" style="min-width: 300px;"></div>
         <div class="col-sm-8 container">
           <div class="row">
             <div class="col-sm-2"></div>
-            <div class="col-sm-8">
-              <h1>Create Flawless Conversations</h1>
-              <p class="subheader">Build next-generation smart applications on-premise or cloud. Interact flawlessly with advanced voice and text-based conversational interfaces.</p>
+            <div class="col-sm-8 mt-4">
+              <h1>Create flawless Conversations</h1>
+              <p class="subheader">
+                Build next-generation smart applications on-premise or cloud. 
+                Interact flawlessly with advanced voice and text-based conversational interfaces.
+              </p>
             </div>
             <div class="col-sm-2"></div>
-        </div>
+          </div>
         </div>
       </div>
     </div>
     <div id="understand" class="section">
-      <div class="row">
-        <div class="col-sm-8 container">
-          <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8">
-              <h1>Understand Your Customers</h1>
-              <p class="subheader">Recognise and comprehend intent, interpret discourse and reactions, extract entities, identify pragmatics,analyse feelings and emotions.</p>
+        <div class="row">
+          <div class="col-sm-8 container mt-4"  >
+            <div class="row">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-8">
+                <h1>Understand your customers</h1>
+                <p class="subheader">
+                    Recognise and comprehend intent,
+                    interpret discourse and reactions, extract entities, 
+                    identify pragmatics,analyse feelings and emotions.                     
+                </p>
+              </div>
+              <div class="col-sm-2"></div>
             </div>
-            <div class="col-sm-2"></div>
+          </div>
+          <div class="col-sm-4"><img src="images/understand-section3.png"></div>
         </div>
-        </div>
-        <div class="col-sm-4"><img src="images/section3.png"></div>
-      </div>
     </div>
     <div id="architecture" class="container">
       <div class="row">
         <div class="col-sm-12 text-center">
-          <h1>Be All Over the Globe</h1>
+          <h1>Be All Over the Globe
+            <p class="subheader" style="margin-top: 13px;">Lorem ip sum dot sum lorem dolar eit emit sum lorem ipsum narisu quis
+              lorem ipsum</p>
+          </h1>
         </div>
         <div class="col-sm-4 text-center">
-          <img src="images/globe1.png">
+          <img src="images/tick.png">
           <h3>Speak Native Languages</h3>
           <p>Multilingual support allows you to expand into new markets anywhere in the world. Supports Thai, Malay, and many Asian languages.</p>
         </div>
         <div class="col-sm-4 text-center">
-          <img src="images/globe2.png">
+          <img src="images/tick.png">
             <h3>Tailored for FinTech</h3>
             <p>Get ahead of the pack with pre-trained FinTech models included in the enterprise-grade Triniti AI Engine.</p>
         </div>
         <div class="col-sm-4 text-center">
-          <img src="images/globe3.png">
+          <img src="images/tick.png">
           <h3>Go Global</h3>
           <p>Build next-generation applications where your data resides. The Triniti AI engine is platform agnostic and functions seamlessly on-premise or in the intelligent cloud.</p>
         </div>
@@ -115,7 +161,7 @@
         <div class="col-sm-7"></div>
       </div>
 
-      <div id="operation">
+ <!--     <div id="operation">
         <div class="container">
         <div class="row">
           <div class="col-sm-5">
@@ -125,48 +171,97 @@
           <div class="col-sm-7"><img src="images/section5.png"></div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Footer -->
-    <div class="main-footer">
-      <div class="container subfooter">
+    <div class="main-footer">      
+      <div class="container subfooter" style="display: block;">
         <div class="row">
-        <div class="logo col-sm-3"><img src="images/logo.png"></div>
-        <div class="col-sm-5"></div>
-        <div class="col-sm-2">
+        <div class="logo col-12 col-md-4 mb-4">
+          <img src="images/logo-beta.png">
+          <div class="tagline">Create natural conversational experiences</div>
+          <div class="copyright">Copyright © 2018 | All rights reserved.</div>
+        </div>
+        <div class="col-6 col-md-2">
           <ul class="main-menu">
             <h3>About Triniti</h3>
             <li><a href="index.html">Overview</a></li>
             <li><a href="index.html#architecture">Architecture</a></li>
-            <!--<li><a href="solutions.html">Solutions</a></li>-->
+            <li><a href="solutions.html">Solutions</a></li>
             <li><a href="api.html">Resources</a></li>
             <li><a href="http://developer.triniti.ai">Go to Console</a></li>
           </ul>
         </div>
-        <div class="col-sm-2">
+        <div class="col-6 col-md-2" style="min-height:288px;">
+            <ul class="main-menu">
+              <h3>Products</h3>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">Join the waiting list</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2" style="min-height:288px;">
+              <ul class="main-menu">
+                <h3>Community</h3>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+          </div>
+        <div class="col-6 col-md-2" style="min-height:288px;">
           <ul class="main-menu">
-            <h3>Contact Us</h3>
-            <li><a href="#">Email</a></li>
+            <h3>Support</h3>
+            <li><a href="#">Email Us</a></li>
+            <li><a href="#">FAQs</a></li>
           </ul>
         </div>
       </div>
     </div>
+    <hr style="width:90%" style="margin-top: 30px;">
       <div class="container footer-bottom">
-        <div class="row">
-          <div class="col-sm-3 offset-sm-6">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
+        <div class="row pb-5 mb-5 pb-md-0 mb-md-0" style="align-items: center;">
+          <div class="col-sm-6 socialWrapper">
+            <img class="social" style="width: 10px;height: 20px; " src="images/facebook.png">
+            <img class="social" src="images/google.png">
+            <img class="social" src="images/twitter.png">
+            <img class="social" src="images/linkedin.png">
           </div>
-          <div id="copyright" class="col-sm-3 float-right the_copyright">
-            <p>Copyright © 2018</p>
+          <div class="col-sm-6 legal" style="padding-right: 0px; display: inline-flex; padding-left: 15%;">
+            <a href="#" style="margin-right: 35px; color:black;">PRIVACY POLICY</a>
+            <a href="#" style="color:black;">TERMS AND CONDITIONS</a>
           </div>
         </div>
       </div>
     </div>
-
     <!-- Bootstrap core JavaScript -->
-    <script src="javascripts/_jquery.js"></script>
-    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="javascripts/lib/bootstrap.min.js"></script>
+
+<script>
+      $(window).on('scroll', function(){
+      if ($(this).scrollTop() > 800){
+        $(".navbar").addClass("navbar-sticky");
+      }
+      else {
+        $(".navbar").removeClass("navbar-sticky");
+      }
+    });
+
+    $('.ca_hamburger').click(function(){
+      if($('#navbarResponsive').hasClass('collapsing')) {
+        return false;
+      }
+
+      if($(this).hasClass('ca_opened')) {
+        $(this).removeClass('ca_opened');
+        $('#navbarResponsive').collapse('hide');
+      }
+      else {
+        $(this).addClass('ca_opened');
+        $('#navbarResponsive').collapse('show');
+      }
+    });
+</script>
 
   </body>
 
