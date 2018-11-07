@@ -74,6 +74,10 @@ html, body {
     top: 100%;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     display: block;
+    a {
+      text-decoration: none;
+      color: black;
+    }
     .dropdown-text {
       display: inline-block;
       height: 38px;
@@ -156,7 +160,7 @@ html, body {
   overflow-y: auto;
   overflow-x: hidden;
   position: fixed;
-  z-index: 30;
+ /* z-index: 30; */
  /* top: $topbar-height; */
   top: 135px;
   left: 0;
@@ -580,6 +584,7 @@ html, body {
   position: relative;
   min-width: 310px; /* min width for lang-selector to not overflow to the next line */
   z-index: 30;
+  border-left: 1px solid black;
 
   &:after {
     content: '';
@@ -823,6 +828,18 @@ html, body {
 .documentation .content {
   pre, blockquote {
     width:100%!important;
+  }
+}
+
+body .content {
+  pre, blockquote {
+    width:100%!important;
+  }
+}
+
+body .content {
+  &>h1, &>h2, &>h3, &>h4, &>h5, &>h6, &>p, &>table, &>ul, &>ol, &>aside, &>dl {
+    margin-right:0!important;;
   }
 }
 ////////////////////////////////////////////////////////////////////////////////

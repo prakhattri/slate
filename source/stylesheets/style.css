@@ -70,7 +70,8 @@ p.subheader{
   z-index:40;
   position:absolute;
   top:28px;
-  right: 10%;
+  right: 20%;
+  width: 100%;
   border-radius: 5px;
   margin-top:15px;
   padding:0;
@@ -83,7 +84,7 @@ p.subheader{
 .navbar-nav li ul:before{
   position:absolute;
   top: -5px;
-  left: 50%;
+  left: 45%;
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
@@ -276,9 +277,9 @@ div.demoButton {
   width: 80px;
   height: 80px;
   border-radius: 80px;
-  background-image: url(../images/white-logo.png);
-  background-size: 60%;
-  background-position: center;
+  background-image: url(../images/white-logo.svg);
+  background-size: 90%;
+  background-position: bottom;
   background-repeat: no-repeat;
   box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
 }
@@ -357,9 +358,6 @@ img[src="images/tick.png"] {
 }
 
 @media (max-width: 576px) {
-  div.row.header {
-    margin-top: 50px;
-  }
   div.demoButtonWrapper {
     left: 70% !important;
   }
@@ -378,6 +376,7 @@ img[src="images/tick.png"] {
   .col-6.col-md-2 {
     min-height: unset!important;
   }
+  
 }
 @media (max-width: 376px) {
   img[src="images/triniti-section1.png"] {
@@ -402,10 +401,16 @@ img[src="images/tick.png"] {
 /* For tablets */
 @media (max-width: 576px) {
   .col-sm-6.legal {
-    width: unset;
+    width: 100%;
+    margin-top: 10%;
+    padding-left: 0px !important;
+    text-align: center;
+    padding-right: 5% !important;
+    margin-left: 22%;
   }
   .col-sm-6.socialWrapper {
-    width: unset;
+    width: 100%;
+    margin-left: 5%;
   }
 
   .section h1 {
@@ -414,14 +419,28 @@ img[src="images/tick.png"] {
   .container {
     text-align: center;
   }
+  .social {
+    margin-right: 25%;
+  }
+  .nav-item {
+    text-align: left;
+  }
 }
 
 /*For iphone 6/7/8 */
-@media (max-width: 481px) {
+@media (max-width: 501px) {
   .col-sm-6.legal {
-    margin-top: 10%;
-  }
+    margin-left: 17%;
+  } 
 }
+
+@media (max-width: 501px) {
+  .col-sm-6.legal {
+    margin-left: 10%;
+  } 
+}
+/*End for iphone 6/7/8 */
+
 /* END RESPONSIVE */
 
 
@@ -429,7 +448,33 @@ img[src="images/tick.png"] {
   width: 100%;
   z-index: 9999999;
   position: fixed;
-  background-color: blue; 
+  background-color: #062339; 
+}
+
+.list-title {
+  display: inline-block;
+  padding-right: 15px;
+  font-size: 20px;
+}
+.dropdown-text {
+  display: inline-block;
+  height: 36px;
+  margin-left: 35px;
+}
+
+.dropdown-text:hover {
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+
+.listWrapper {
+  margin-top: 15px;
+  height: 38px; 
+}
+
+.listWrapper a{
+  text-decoration: none;
+  color: black;
 }
 
 @media (max-width: 991px){
