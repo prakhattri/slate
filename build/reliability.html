@@ -1,0 +1,310 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Reliability</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+    <link href="stylesheets/documentation.css" rel="stylesheet" media="documentation" />
+      <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="reliability" data-languages="[]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    
+    <div class="toc-header">
+        <div style="padding-top: 26.6px; padding-left: 35px;"><a class="logo" href="index.html"><img src="images/logo-beta-white.svg" alt="Logo beta white" /></a></div>
+        <ul class="main-menu">
+          <li><a href="index.html">Overview</a></li>
+          <li><a class="nav-link" href="Security.html">Security</a></li>
+          <li value="dropdown"><a href="documentation.html">Docs</a></li>
+          <li style="margin-right: 35px;"><a href="http://developer.triniti.ai" style="border: 1px solid white;padding: 8.4px 13px;">Go to Console</a></li>
+        </ul>
+      <div class="dropdown">
+        <div class="listWrapper">
+          <div class="dropdown-text"><a href="documentation.html">Tutorials</a></div>
+          <div class="dropdown-text"><a href="api.html">API</a></div>
+          <div class="dropdown-text"><a href="prebuilt.html">Pre-built</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="toc-wrapper">
+
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search Documentation">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#test" class="toc-h1 toc-link" data-title="Test">Test</a>
+          </li>
+          <li>
+            <a href="#overview" class="toc-h1 toc-link" data-title="Overview">Overview</a>
+          </li>
+      </ul>
+    </div>
+    <div class="page-wrapper">
+      <!--<div class="dark-box"></div>-->
+      <div class="content">
+        <h1 id='test'>Test</h1>
+<p><em>Triniti.ai</em> allows you to create applications for users to be able to converse with triniti engine. You can create varied ranges of chatbot such as a pizzabot, a carbot, a phonebot etc. To learn how to create a chatbot from scratch for your company’s online services, click <a href="#Overview">her                 e</a></p>
+
+<hr>
+<h1 id='overview'>Overview</h1>
+      </div>
+      <!--<div class="dark-box">
+      </div>-->
+    </div>
+
+    <div class="main-footer" style="display:none;">
+      <div class="subfooter">
+        <div class="logoWrapper">
+          <div class="logo"><img src="images/logo-beta-blue.png" alt="Logo beta blue" /></div>
+          <div class="tagline">Create natural conversational experiences</div>
+          <div class="copyright">Copyright © 2018 | All rights reserved.</div>
+        </div>
+        <div class="menu-row">
+          <ul class="main-menu">
+            <h3>Company</h3>
+            <li><a href="index.html">Active.ai</a></li>
+            <li><a href="index.html">About us</a></li>
+            <li><a href="index.html">Team</a></li>
+            <li><a href="index.html">Jobs</a></li>
+            <li><a href="index.html">Press</a></li>
+          </ul>
+          <ul class="main-menu">
+            <h3>Products</h3>
+            <li><a href="index.html">Features</a></li>
+            <li><a href="index.html">Pricing</a></li>
+            <li><a href="index.html">Customers</a></li>
+            <li><a href="index.html">Join the waiting list</a></li>
+          </ul>
+          <ul class="main-menu">
+            <h3>Community</h3>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <ul class="main-menu">
+            <h3>Support</h3>
+            <li><a href="#">Email us</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+      </div>
+      <hr style="width: 90%">
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <img class="social" style="width: 10px;height: 20px;" src="images/facebook.png">
+          <img class="social" src="images/google.png">
+          <img class="social" src="images/twitter.png">
+          <img class="social" src="images/linkedin.png">
+        </div>
+        <div class="footer-bottom-right">
+          <a href="#">PRIVACY POLICY</a>
+          <a href="#">TERMS AND CONDITIONS</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
