@@ -1,5 +1,5 @@
 ---
-layout: documentation
+layout: privacy
 
 title: Privacy
 

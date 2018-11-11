@@ -1,13 +1,21 @@
 ---
-layout: documentation
+layout: security
 
 title: Security
 
 search: true
 ---
 
-# Test
-_Triniti.ai_ allows you to create applications for users to be able to converse with triniti engine. You can create varied ranges of chatbot such as a pizzabot, a carbot, a phonebot etc. To learn how to create a chatbot from scratch for your company’s online services, click [her                 e](#Overview)
+#Security  at Triniti.ai
 
+## Security is a top priority
+---
+
+# Security Practices
+We follow extensive practices to track and protect your information through a comprehensive controls framework. Learn why thousands of customers trust us to protect their most valuable data.
+
+[Read More](#read){something}
+
+![test](../images/google.png)
 ---
 # Overview

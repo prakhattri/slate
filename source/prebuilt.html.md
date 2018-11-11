@@ -1,5 +1,5 @@
 ---
-layout: documentation
+layout: prebuilt
 
 title: Documentation
 

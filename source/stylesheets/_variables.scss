@@ -73,13 +73,14 @@ $topbar-height: 78px !default; //height of the topbar.
 ////////////////////
 %default-font {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Gotham Book';
   font-size: 14px;
 }
 %primary-font{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Gotham Medium', sans-serif;
 }
 %secondary-font{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Gotham Book', sans-serif;
 }
 
 %header-font {
@@ -89,6 +90,7 @@ $topbar-height: 78px !default; //height of the topbar.
 
 %code-font {
   font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
+  font-family: 'Gotham Book';
   font-size: 12px;
   line-height: 1.5;
 }
