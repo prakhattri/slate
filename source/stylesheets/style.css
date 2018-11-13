@@ -2,6 +2,18 @@
   font-family: 'Gotham';
   src: url(../fonts/Gotham-Light.otf);
 }
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url(../fonts/Gotham-Bold.otf);
+}
+@font-face {
+  font-family: 'Gotham Book';
+  src: url(../fonts/Gotham-Book.otf);
+}
+@font-face {
+  font-family: 'Gotham Medium';
+  src: url(../fonts/Gotham-Medium.otf);
+}
 html {
   font-family: 'Gotham'!important;
 } 
@@ -16,7 +28,7 @@ h1{
   font-family: 'Gotham', sans-serif;
   font-size:30px;
 }
-h3,p,a{font-family:'Gotham', sans-serif;}
+h3,p,a{font-family:'Gotham Book', sans-serif;}
 img{max-width:100%;}
 p.subheader{
   font-size:15px;
@@ -130,6 +142,7 @@ li.nav-item {
   line-height: 1.14;
   letter-spacing: -0.9px;
   color: #333333;
+  font-family: 'Gotham Medium';
 }
 .section .container{
   margin-top: 0px;
