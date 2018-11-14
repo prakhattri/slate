@@ -683,8 +683,8 @@ html, body {
 
   hr {
     margin: 2em 0;
-    border-top: 2px solid $examples-bg;
-    border-bottom: 2px solid $main-bg;
+    border-top: 1px solid $examples-bg;
+    border-bottom: 1px solid $main-bg;
   }
 
   table {
@@ -760,13 +760,16 @@ html, body {
     margin-right: 50%;
     background: $aside-notice-bg;
     line-height: 1.6;
+    color: white;
 
     &.warning {
       background-color: $aside-warning-bg;
+      color: white;
     }
 
     &.success {
       background-color: $aside-success-bg;
+      color: white;
     }
   }
 
