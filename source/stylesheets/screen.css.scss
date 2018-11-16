@@ -1172,3 +1172,9 @@ body.compliance #nav-button {
 }
 
 /* End responsive */
+
+/* Change triniti logo size for slate pages */
+img[src="images/triniti-logo-white.svg"] {
+  width: 150px;
+}
+/*End change*/
