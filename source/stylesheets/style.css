@@ -511,6 +511,9 @@ img[src="images/tick.png"] {
   color: black;
 }
 
+
+/* Hamburger menu for landing page */
+
 @media (max-width: 991px){
   .navbar-nav {
      height: 100vh; 
@@ -538,4 +541,79 @@ img[src="images/tick.png"] {
 .ca_menu.ca_opened .holder {top: 0; }
 }
 
+/* End hamburger menu */
 
+/* For security page */
+h1.security {
+  font-family: 'Gotham Medium';
+  font-size: 42px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.24;
+  letter-spacing: -0.8px;
+  color: #2d2d2d;
+  margin-bottom: 15px;
+}
+
+h2.security {
+  font-family: 'Gotham Medium';
+  font-size: 25px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #2d2d2d;
+  margin-bottom: 15px;
+}
+.learnPrompt {
+  width: 170px;
+  padding: 10px 20px;
+  border: 1px solid black;
+  text-align: center;
+  margin-top:30px;
+  font-family: 'Gotham Medium';
+  font-size: 14px;
+
+}
+
+.learnPrompt:hover {
+  background: #062339;
+}
+.learnPrompt:hover .learn {
+  color: white!important;
+}
+
+button.learn {
+  text-decoration: none;
+  border: none;
+  background: unset;
+  outline: none;
+}
+
+button.learn:hover {
+
+}
+
+.underlineLearnPrompt {
+  font-family: 'Gotham Bold';
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.86;
+  letter-spacing: normal;
+  color: #5d5d5d;
+  text-decoration: underline;
+}
+
+.underlineLearnPrompt a{
+  text-decoration: none;
+  color: #5d5d5d;
+  
+}
+.subheader.security {
+  font-size:14px;
+}
+/*End for security page */

@@ -1,5 +1,5 @@
 ---
-layout: security
+layout: security_slate
 
 title: Security
 

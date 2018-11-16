@@ -76,12 +76,87 @@
 </div>
     <!--End Navigation-->
     <!-- Page Content -->
-  <div class="container">
-        <h1 style="margin-top: 70px;">Security Page</h1>
+  <div class="container" style="margin-top: 130px;">
+    <div class="row">
+      <div class="col-sm-8" style="min-height: 210px;">
+        <h1 class="security">Security is our Top priority</h1>
+        <p class="subheader">
+          You own your data, and we're committed to protecting your privacy. 
+          View the type of information we collect about you, why, what we do with that information, 
+          how it's shared, and how we handle content you place in our products and services
+        </p>
+        <div class="learnPrompt">
+          <button class="learn" href="#">LEARN MORE</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <img class="securityShield" src="images/Security/shield.svg" style="width: 158px; height: 190px; margin-left: 30%;">
+      </div>
+    </div>
+    <div class="row" style="margin-top: 80px;">
+      <div class="col-sm-12">
+        <h2 class="security">Our security compliances</h2>
+        <p class="subheader" style="margin-bottom: 30px;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida varius arcu, 
+          eget vulputate nunc vulputate in. Integer maximus dignissim nulla, vitae vehicula nulla 
+          sagittis vitae. Nunc vitae diam finibus ipsum 
+        </p>
+        <div class="compliancesWrapper" style="display: flex;">
+          <img src="images/Security/soc.png" style="margin-left: 0px; width: 93px; height: 85px;">
+          <img src="images/Security/iso.png" style="margin-left: 80px; width: 93px; height: 85px;">
+          <img src="images/Security/pci.png" style="margin-left: 80px; width: 93px; height: 85px;">
+        </div>
+        <div class="learnPrompt">
+          <button class="learn">LEARN MORE</button>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 80px;">
+        <div class="col-sm-12">
+          <img src="images/Security/padlock.svg" style="width: 32px; height: 32px; object-fit: contain; margin-right: 20px; margin-bottom: 7px;">
+          <h2 class="security" style="display: inline">Strong data encryption</h2>
+          <p class="subheader security" style="margin-top: 16px; margin-bottom: 5px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida varius arcu, 
+            eget vulputate nunc vulputate in. Integer maximus dignissim nulla, vitae vehicula nulla 
+            sagittis vitae. Nunc vitae diam finibus ipsum 
+          </p>
+          <div class="underlineLearnPrompt">
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 80px;">
+          <div class="col-sm-12">
+            <img src="images/Security/search.svg" style="width: 32px; height: 32px; object-fit: contain; margin-right: 20px; margin-bottom: 7px;">
+            <h2 class="security" style="display: inline">Security Testing</h2>
+            <p class="subheader security" style="margin-top: 16px; margin-bottom: 5px;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida varius arcu, 
+              eget vulputate nunc vulputate in. Integer maximus dignissim nulla, vitae vehicula nulla 
+              sagittis vitae. Nunc vitae diam finibus ipsum 
+            </p>
+            <div class="underlineLearnPrompt">
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 80px;">
+            <div class="col-sm-12">
+              <img src="images/Security/eye.svg" style="width: 32px; height: 32px; object-fit: contain; margin-right: 20px; margin-bottom: 7px;">
+              <h2 class="security" style="display: inline">Breach detection and monitoring</h2>
+              <p class="subheader security" style="margin-top: 16px; margin-bottom: 5px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida varius arcu, 
+                eget vulputate nunc vulputate in. Integer maximus dignissim nulla, vitae vehicula nulla 
+                sagittis vitae. Nunc vitae diam finibus ipsum 
+              </p>
+              <div class="underlineLearnPrompt">
+                <a href="#">Learn more</a>
+              </div>
+            </div>
+          </div>
   </div>
 
     <!-- Footer -->
-    <div class="main-footer">      
+    <div class="main-footer" style="margin-top: 150px;">      
       <div class="container subfooter" style="display: block;">
         <div class="row">
         <div class="logo col-12 col-md-4 mb-4">
@@ -143,32 +218,6 @@
     <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="javascripts/lib/bootstrap.min.js"></script>
-
-<script>
-      $(window).on('scroll', function(){
-      if ($(this).scrollTop() > 800){
-        $(".navbar").addClass("navbar-sticky");
-      }
-      else {
-        $(".navbar").removeClass("navbar-sticky");
-      }
-    });
-
-    $('.ca_hamburger').click(function(){
-      if($('#navbarResponsive').hasClass('collapsing')) {
-        return false;
-      }
-
-      if($(this).hasClass('ca_opened')) {
-        $(this).removeClass('ca_opened');
-        $('#navbarResponsive').collapse('hide');
-      }
-      else {
-        $(this).addClass('ca_opened');
-        $('#navbarResponsive').collapse('show');
-      }
-    });
-</script>
 
   </body>
 

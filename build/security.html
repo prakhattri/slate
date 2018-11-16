@@ -1,352 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!doctype html>
-<html>
   <head>
-    <meta charset="utf-8">
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Security</title>
 
-    <style>
-      .highlight table td { padding: 5px; }
-.highlight table pre { margin: 0; }
-.highlight .gh {
-  color: #999999;
-}
-.highlight .sr {
-  color: #f6aa11;
-}
-.highlight .go {
-  color: #888888;
-}
-.highlight .gp {
-  color: #555555;
-}
-.highlight .gs {
-}
-.highlight .gu {
-  color: #aaaaaa;
-}
-.highlight .nb {
-  color: #f6aa11;
-}
-.highlight .cm {
-  color: #75715e;
-}
-.highlight .cp {
-  color: #75715e;
-}
-.highlight .c1 {
-  color: #75715e;
-}
-.highlight .cs {
-  color: #75715e;
-}
-.highlight .c, .highlight .cd {
-  color: #75715e;
-}
-.highlight .err {
-  color: #960050;
-}
-.highlight .gr {
-  color: #960050;
-}
-.highlight .gt {
-  color: #960050;
-}
-.highlight .gd {
-  color: #49483e;
-}
-.highlight .gi {
-  color: #49483e;
-}
-.highlight .ge {
-  color: #49483e;
-}
-.highlight .kc {
-  color: #66d9ef;
-}
-.highlight .kd {
-  color: #66d9ef;
-}
-.highlight .kr {
-  color: #66d9ef;
-}
-.highlight .no {
-  color: #66d9ef;
-}
-.highlight .kt {
-  color: #66d9ef;
-}
-.highlight .mf {
-  color: #ae81ff;
-}
-.highlight .mh {
-  color: #ae81ff;
-}
-.highlight .il {
-  color: #ae81ff;
-}
-.highlight .mi {
-  color: #ae81ff;
-}
-.highlight .mo {
-  color: #ae81ff;
-}
-.highlight .m, .highlight .mb, .highlight .mx {
-  color: #ae81ff;
-}
-.highlight .sc {
-  color: #ae81ff;
-}
-.highlight .se {
-  color: #ae81ff;
-}
-.highlight .ss {
-  color: #ae81ff;
-}
-.highlight .sd {
-  color: #e6db74;
-}
-.highlight .s2 {
-  color: #e6db74;
-}
-.highlight .sb {
-  color: #e6db74;
-}
-.highlight .sh {
-  color: #e6db74;
-}
-.highlight .si {
-  color: #e6db74;
-}
-.highlight .sx {
-  color: #e6db74;
-}
-.highlight .s1 {
-  color: #e6db74;
-}
-.highlight .s {
-  color: #e6db74;
-}
-.highlight .na {
-  color: #a6e22e;
-}
-.highlight .nc {
-  color: #a6e22e;
-}
-.highlight .nd {
-  color: #a6e22e;
-}
-.highlight .ne {
-  color: #a6e22e;
-}
-.highlight .nf {
-  color: #a6e22e;
-}
-.highlight .vc {
-  color: #ffffff;
-}
-.highlight .nn {
-  color: #ffffff;
-}
-.highlight .nl {
-  color: #ffffff;
-}
-.highlight .ni {
-  color: #ffffff;
-}
-.highlight .bp {
-  color: #ffffff;
-}
-.highlight .vg {
-  color: #ffffff;
-}
-.highlight .vi {
-  color: #ffffff;
-}
-.highlight .nv {
-  color: #ffffff;
-}
-.highlight .w {
-  color: #ffffff;
-}
-.highlight {
-  color: #ffffff;
-}
-.highlight .n, .highlight .py, .highlight .nx {
-  color: #ffffff;
-}
-.highlight .ow {
-  color: #f92672;
-}
-.highlight .nt {
-  color: #f92672;
-}
-.highlight .k, .highlight .kv {
-  color: #f92672;
-}
-.highlight .kn {
-  color: #f92672;
-}
-.highlight .kp {
-  color: #f92672;
-}
-.highlight .o {
-  color: #f92672;
-}
-    </style>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
-    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
-    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
-    <link href="stylesheets/documentation.css" rel="stylesheet" media="documentation" />
-      <script src="javascripts/all.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Triniti Documentation</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheets/style.css" rel="stylesheet">
   </head>
 
-  <body class="security" data-languages="[]">
-    <a href="#" id="nav-button">
-      <span>
-        NAV
-        <img src="images/navbar.png" alt="Navbar" />
-      </span>
-    </a>
-    
-    <div class="toc-header">
-        <div style="padding-top: 26.6px; padding-left: 35px;"><a class="logo" href="index.html"><img src="images/logo-beta-white.svg" alt="Logo beta white" /></a></div>
-        <ul class="main-menu">
-          <li><a href="index.html">Overview</a></li>
-          <li><a class="nav-link" href="security.html">Security</a></li>
-          <li value="dropdown"><a href="documentation.html">Docs</a></li>
-          <li style="margin-right: 35px;"><a href="http://developer.triniti.ai" style="border: 1px solid white;padding: 8.4px 13px; margin-right:0px;">Go to Console</a></li>
-        </ul>
-      <div class="dropdown">
-        <div class="listWrapper">
-              <div class="dropdown-text"><a href="security.html">Security</a></div>
-              <div class="dropdown-text"><a href="reliability.html">Reliability</a></div>
-              <div class="dropdown-text"><a href="privacy.html">Privacy</a></div>
-              <div class="dropdown-text current"><a href="compliance.html">Compliance</a></div>
-        </div>
-      </div>
-      <span class="mobileMenu" style="display:none;">
+  <body>
+    <div class="home__header" style="background-image:none; height: inherit;">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg static-top" style="background-color: #062339;">
+      <div class="container">
+        <a class="logo" href="index.html"><img src="images/logo-beta-white.svg"></a>
+
+        <span class="ca_hamburger">
           <span></span>
           <span></span>
           <span></span>
       </span>
-      <div class="mobileSpan" style="display:none;">
-        <li><a href="index.html">Overview</a></li>
-        <li class="sub"><a href="security.html">Security</a></li>
-        <li class="sub"><a href="reliability.html">Reliability</a></li>
-        <li class="sub"><a href="privacy.html">Privacy</a></li>
-        <li class="sub"><a href="compliance.html">Compliance</a></li>
-        <li><a href="documentation.html">Docs</a></li>
-        <li class="sub"><a href="tutorials.html">Tutorials</a></li>
-        <li class="sub"><a href="api.html">API</a></li>
-        <li class="sub"><a href="prebuilt.html">Pre-builts</a></li>
-        <li class="subPrompt" style="margin-right: 35px;"><a href="http://developer.triniti.ai" style="border: 1px solid white;padding: 8.4px 13px;">Go to Console</a></li>
-      </div>
-    </div>
 
-    <div class="toc-wrapper">
-
-        <div class="search">
-          <input type="text" class="search" id="input-search" placeholder="Search Documentation">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Overview
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Security.html">Security</a>
+            </li>
+            <li class="nav-item" style="position: relative;">
+              <a class="nav-link" href="documentation.html" name="Docs">Docs</a>
+                <ul>
+                  <li><a href="documentation.html">Tutorials</a></li>
+                  <li><a href="api.html">API</a></li>
+                  <li><a href="prebuilts.html">Pre-builts</a>
+                </ul>
+            </li>
+            <li class="nav-item" style="text-align: center;">
+              <a class="nav-link" name="consoleLink" href="http://developer.triniti.ai" style="width: 102px;">Go to Console</a>
+            </li>
+          </ul>
         </div>
-        <ul class="search-results"></ul>
-      <ul id="toc" class="toc-list-h1">
-          <li>
-            <a href="#security-at-triniti-ai" class="toc-h1 toc-link" data-title="Security  at Triniti.ai">Security  at Triniti.ai</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#security-is-a-top-priority" class="toc-h2 toc-link" data-title="Security is a top priority">Security is a top priority</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#security-practices" class="toc-h1 toc-link" data-title="Security Practices">Security Practices</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#7ad50519fe" class="toc-h2 toc-link" data-title=""><img src="images/google.png" alt="test"></a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#overview" class="toc-h1 toc-link" data-title="Overview">Overview</a>
-          </li>
-      </ul>
-    </div>
-    <div class="page-wrapper">
-      <!--<div class="dark-box"></div>-->
-      <div class="content">
-        <h1 id='security-at-triniti-ai'>Security  at Triniti.ai</h1><h2 id='security-is-a-top-priority'>Security is a top priority</h2>
-<hr>
-<h1 id='security-practices'>Security Practices</h1>
-<p>We follow extensive practices to track and protect your information through a comprehensive controls framework. Learn why thousands of customers trust us to protect their most valuable data.</p>
-
-<p><a href="#read">Read More</a>{something}</p>
-<h2 id='7ad50519fe'><img src="images/google.png" alt="test" /></h2><h1 id='overview'>Overview</h1>
+        <div class="dropdown"style="
+        position: absolute;
+        color: black;
+        background: white;
+        width: 100%;
+        height: 55px;
+        top: 100%;
+        left: 0px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+        display: block;">
+        <div class="container">
+            <div class="listWrapper">
+              <div class="list-title">Trust</div>
+              <div class="dropdown-text" style="margin-left: 0px;"><a href="#">Security</a></div>
+              <div class="dropdown-text"><a href="#">Reliability</a></div>
+              <div class="dropdown-text"><a href="#">Privacy</a></div>
+              <div class="dropdown-text"><a href="#">Compliance</a></div>
+            </div>
+        </div>
+        </div>
       </div>
-      <!--<div class="dark-box">
-      </div>-->
+    </nav>
+</div>
+    <!--End Navigation-->
+    <!-- Page Content -->
+  <div class="container" style="margin-top: 130px;">
+    <div class="row">
+      <div class="col-sm-8" style="min-height: 210px;">
+        <h1 class="security">Security is our Top priority</h1>
+        <p class="subheader">
+          You own your data, and we're committed to protecting your privacy. 
+          View the type of information we collect about you, why, what we do with that information, 
+          how it's shared, and how we handle content you place in our products and services
+        </p>
+        <div class="learnPrompt">
+          <button class="learn" href="#">LEARN MORE</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <img class="securityShield" src="images/Security/shield.svg" style="width: 158px; height: 190px; margin-left: 30%;">
+      </div>
     </div>
+    <div class="row" style="margin-top: 80px;">
+      <div class="col-sm-12">
+        <h2 class="security">Our security compliances</h2>
+        <p class="subheader" style="margin-bottom: 30px;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida varius arcu, 
+          eget vulputate nunc vulputate in. Integer maximus dignissim nulla, vitae vehicula nulla 
+          sagittis vitae. Nunc vitae diam finibus ipsum 
+        </p>
+        <div class="compliancesWrapper" style="display: flex;">
+          <img src="images/Security/soc.png" style="margin-left: 0px; width: 93px; height: 85px;">
+          <img src="images/Security/iso.png" style="margin-left: 80px; width: 93px; height: 85px;">
+          <img src="images/Security/pci.png" style="margin-left: 80px; width: 93px; height: 85px;">
+        </div>
+        <div class="learnPrompt">
+          <button class="learn">LEARN MORE</button>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 80px;">
+        <div class="col-sm-12">
+          <img src="images/Security/padlock.svg" style="width: 32px; height: 32px; object-fit: contain; margin-right: 20px; margin-bottom: 7px;">
+          <h2 class="security" style="display: inline">Strong data encryption</h2>
+          <p class="subheader security" style="margin-top: 16px; margin-bottom: 5px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida varius arcu, 
+            eget vulputate nunc vulputate in. Integer maximus dignissim nulla, vitae vehicula nulla 
+            sagittis vitae. Nunc vitae diam finibus ipsum 
+          </p>
+          <div class="underlineLearnPrompt">
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 80px;">
+          <div class="col-sm-12">
+            <img src="images/Security/search.svg" style="width: 32px; height: 32px; object-fit: contain; margin-right: 20px; margin-bottom: 7px;">
+            <h2 class="security" style="display: inline">Security Testing</h2>
+            <p class="subheader security" style="margin-top: 16px; margin-bottom: 5px;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida varius arcu, 
+              eget vulputate nunc vulputate in. Integer maximus dignissim nulla, vitae vehicula nulla 
+              sagittis vitae. Nunc vitae diam finibus ipsum 
+            </p>
+            <div class="underlineLearnPrompt">
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 80px;">
+            <div class="col-sm-12">
+              <img src="images/Security/eye.svg" style="width: 32px; height: 32px; object-fit: contain; margin-right: 20px; margin-bottom: 7px;">
+              <h2 class="security" style="display: inline">Breach detection and monitoring</h2>
+              <p class="subheader security" style="margin-top: 16px; margin-bottom: 5px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida varius arcu, 
+                eget vulputate nunc vulputate in. Integer maximus dignissim nulla, vitae vehicula nulla 
+                sagittis vitae. Nunc vitae diam finibus ipsum 
+              </p>
+              <div class="underlineLearnPrompt">
+                <a href="#">Learn more</a>
+              </div>
+            </div>
+          </div>
+  </div>
 
-    <div class="main-footer">
-      <div class="subfooter">
-        <div class="logoWrapper">
-          <div class="logo"><img src="images/logo-beta-blue.png" alt="Logo beta blue" /></div>
+    <!-- Footer -->
+    <div class="main-footer" style="margin-top: 150px;">      
+      <div class="container subfooter" style="display: block;">
+        <div class="row">
+        <div class="logo col-12 col-md-4 mb-4">
+          <img src="images/logo-beta.png">
           <div class="tagline">Create natural conversational experiences</div>
           <div class="copyright">Copyright © 2018 | All rights reserved.</div>
         </div>
-        <div class="menu-row">
+        <div class="col-6 col-md-2" style="min-height: 288px;">
           <ul class="main-menu">
-            <h3>Company</h3>
-            <li><a href="index.html">Active.ai</a></li>
-            <li><a href="index.html">About us</a></li>
-            <li><a href="index.html">Team</a></li>
-            <li><a href="index.html">Jobs</a></li>
-            <li><a href="index.html">Press</a></li>
+            <h3>About Triniti</h3>
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="index.html#architecture">Architecture</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="api.html">Resources</a></li>
+            <li><a href="http://developer.triniti.ai">Go to Console</a></li>
           </ul>
-          <ul class="main-menu">
-            <h3>Products</h3>
-            <li><a href="index.html">Features</a></li>
-            <li><a href="index.html">Pricing</a></li>
-            <li><a href="index.html">Customers</a></li>
-            <li><a href="index.html">Join the waiting list</a></li>
-          </ul>
-          <ul class="main-menu">
-            <h3>Community</h3>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
+        </div>
+        <div class="col-6 col-md-2" style="min-height:288px; height:230px;">
+            <ul class="main-menu">
+              <h3>Products</h3>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">Join the waiting list</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2" style="min-height:288px;">
+              <ul class="main-menu">
+                <h3>Community</h3>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+          </div>
+        <div class="col-6 col-md-2" style="min-height:288px;">
           <ul class="main-menu">
             <h3>Support</h3>
-            <li><a href="#">Email us</a></li>
+            <li><a href="#">Email Us</a></li>
             <li><a href="#">FAQs</a></li>
           </ul>
-      </div>
-      <hr style="width: 90%">
-      <div class="footer-bottom">
-        <div class="footer-bottom-left">
-          <img class="social" style="width: 10px;height: 20px;" src="images/facebook.png">
-          <img class="social" src="images/google.png">
-          <img class="social" src="images/twitter.png">
-          <img class="social" src="images/linkedin.png">
-        </div>
-        <div class="footer-bottom-right">
-          <a href="#">PRIVACY POLICY</a>
-          <a href="#">TERMS AND CONDITIONS</a>
         </div>
       </div>
     </div>
+    <hr style="width:90%" style="margin-top: 30px;">
+      <div class="container footer-bottom">
+        <div class="row pb-5 mb-5 pb-md-0 mb-md-0" style="align-items: center;">
+          <div class="col-sm-6 socialWrapper">
+            <img class="social" style="width: 10px;height: 20px; " src="images/facebook.png">
+            <img class="social" src="images/google.png">
+            <img class="social" src="images/twitter.png">
+            <img class="social" src="images/linkedin.png">
+          </div>
+          <div class="col-sm-6 legal" style="padding-right: 0px; display: inline-flex; padding-left: 15%;">
+            <a href="#" style="margin-right: 35px; color:black;">PRIVACY POLICY</a>
+            <a href="#" style="color:black;">TERMS AND CONDITIONS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="javascripts/lib/bootstrap.min.js"></script>
+
   </body>
+
 </html>
-
-
-<!-- js for clicking on mobile menu button> -->
-<script>
-$('.mobileMenu').on('click', function(e) {
-    $(this).toggleClass("open");
-    e.preventDefault();
-    $('.mobileSpan').toggleClass("expand");
-    e.preventDefault();
-  });
-</script>
