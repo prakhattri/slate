@@ -497,8 +497,7 @@ img[src="images/tick.png"] {
 }
 
 .dropdown-text:hover {
-  font-weight: bold;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid grey;
 }
 
 .listWrapper {
@@ -616,4 +615,12 @@ button.learn:hover {
 .subheader.security {
   font-size:14px;
 }
+
+.current {
+  font-weight:bold;
+  border-bottom: 2px solid black!important;
+}
+a.nav-link.nohover {
+  display: none!important;
+} 
 /*End for security page */
