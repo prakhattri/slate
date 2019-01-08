@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="54px" viewBox="0 0 70 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>BE55212A-69E8-4B35-92A2-85B5E6E9B9AB</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-41.7%" y="-42.7%" width="183.3%" height="185.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.323284647 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-2" points="0.189209302 0.0829268293 0.189209302 3.34443902 15.9538605 3.34443902 15.9538605 34 19.2457674 34 19.2457674 3.34443902 35.4583256 3.34443902 35.4583256 0.0829268293"></polygon>
+        <polygon id="path-4" points="8.01583333 6.60564 -8 6.60564 -8 9.90936 8.01583333 9.90936 8.01583333 26.74212 11.2933333 26.74212 11.2933333 6.60564"></polygon>
+        <polygon id="path-6" points="26.053 6.60564 22.75348 6.60564 22.75012 26.74212 26.053 26.74212 26.053 9.90936 42.19696 9.90936 42.19696 6.60564"></polygon>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-PG-Assets" transform="translate(-118.000000, -1061.000000)">
+            <g id="Group-9" transform="translate(111.765625, 1035.023438)">
+                <g id="Group-8" filter="url(#filter-1)">
+                    <g id="triniti-logo" transform="translate(24.000000, 28.000000)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <g id="Clip-12"></g>
+                        <polygon id="Fill-11" fill="#FFFFFF" mask="url(#mask-3)" points="0.189209302 0.0829268293 0.189209302 3.34443902 15.9538605 3.34443902 15.9538605 34 19.2457674 34 19.2457674 3.34443902 35.4583256 3.34443902 35.4583256 0.0829268293"></polygon>
+                        <mask id="mask-5" fill="white">
+                            <use xlink:href="#path-4"></use>
+                        </mask>
+                        <g id="Clip-15"></g>
+                        <polygon id="Fill-14" fill="#FFFFFF" mask="url(#mask-5)" points="8.01583333 6.60564 -8 6.60564 -8 9.90936 8.01583333 9.90936 8.01583333 26.74212 11.2933333 26.74212 11.2933333 6.60564"></polygon>
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <g id="Clip-18"></g>
+                        <polygon id="Fill-17" fill="#FFFFFF" mask="url(#mask-7)" points="26.053 6.60564 22.75348 6.60564 22.75012 26.74212 26.053 26.74212 26.053 9.90936 42.19696 9.90936 42.19696 6.60564"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

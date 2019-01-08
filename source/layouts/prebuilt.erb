@@ -37,6 +37,7 @@ under the License.
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
     <%= stylesheet_link_tag :screen, media: :screen %>
     <%= stylesheet_link_tag :print, media: :print %>
+    <%= stylesheet_link_tag :documentation, media: :documentation %>
     <% if current_page.data.search %>
       <%= javascript_include_tag  "all" %>
     <% else %>
@@ -51,16 +52,41 @@ under the License.
         <%= image_tag('navbar.png') %>
       </span>
     </a>
+    
     <div class="toc-header">
-        <div><a class="logo" href="index.html"><%= image_tag "logo.png" %></a></div>
+        <div style="padding-top: 26.6px; padding-left: 35px;"><a class="logo" href="index.html"><%= image_tag "images/logo-beta-white.svg" %></a></div>
         <ul class="main-menu">
           <li><a href="index.html">Overview</a></li>
-          <li><a href="index.html#architecture">Architecture</a></li>
-            <!--<li><a href="solutions.html">Solutions</a></li>-->
-          <li><a href="api.html">Resources</a><ul><li><a href="documentation.html">Documentation</a></li><li><a href="api.html">API</a></li></ul></li>
-          <li><a href="http://developer.triniti.ai">Go to Console</a></li>
+          <li><a class="nav-link" href="security.html">Security</a></li>
+          <li value="dropdown"><a href="documentation.html">Docs</a></li>
+          <li style="margin-right: 35px;"><a href="http://developer.triniti.ai" style="border: 1px solid white;padding: 8.4px 13px; margin-right:0px;">Go to Console</a></li>
         </ul>
+      <div class="dropdown">
+        <div class="listWrapper">
+          <div class="dropdown-text"><a href="documentation.html">Tutorials</a></div>
+          <div class="dropdown-text"><a href="api.html">API</a></div>
+          <div class="dropdown-text current"><a href="prebuilt.html">Pre-built</a></div>
+        </div>
+      </div>
+      <span class="mobileMenu" style="display:none;">
+          <span></span>
+          <span></span>
+          <span></span>
+      </span>
+      <div class="mobileSpan" style="display:none;">
+        <li><a href="index.html">Overview</a></li>
+        <li class="sub"><a href="security.html">Security</a></li>
+        <li class="sub"><a href="reliability.html">Reliability</a></li>
+        <li class="sub"><a href="privacy.html">Privacy</a></li>
+        <li class="sub"><a href="compliance.html">Compliance</a></li>
+        <li><a href="documentation.html">Docs</a></li>
+        <li class="sub"><a href="tutorials.html">Tutorials</a></li>
+        <li class="sub"><a href="api.html">API</a></li>
+        <li class="sub"><a href="prebuilt.html">Pre-builts</a></li>
+        <li class="subPrompt" style="margin-right: 35px;"><a href="http://developer.triniti.ai" style="border: 1px solid white;padding: 8.4px 13px;">Go to Console</a></li>
+      </div>
     </div>
+
     <div class="toc-wrapper">
 
       <% if language_tabs.any? %>
@@ -76,7 +102,7 @@ under the License.
       <% end %>
       <% if current_page.data.search %>
         <div class="search">
-          <input type="text" class="search" id="input-search" placeholder="Search">
+          <input type="text" class="search" id="input-search" placeholder="Search Documentation">
         </div>
         <ul class="search-results"></ul>
       <% end %>
@@ -105,11 +131,11 @@ under the License.
       <% end %>
     </div>
     <div class="page-wrapper">
-      <div class="dark-box"></div>
+      <!--<div class="dark-box"></div>-->
       <div class="content">
         <%= page_content %>
       </div>
-      <div class="dark-box">
+      <!--<div class="dark-box">
         <% if language_tabs.any? %>
           <div class="lang-selector">
             <% language_tabs.each do |lang| %>
@@ -121,35 +147,67 @@ under the License.
             <% end %>
           </div>
         <% end %>
-      </div>
+      </div>-->
     </div>
 
-    <div class="main-footer">
+    <div class="main-footer" style="display:none;">
       <div class="subfooter">
-        <div class="logo"><%= image_tag "logo.png" %></div>
-        <div class="right-col">
-          <ul class="main-menu">
-            <h3>About Triniti</h3>
-            <li><a href="index.html">Overview</a></li>
-            <li><a href="index.html#architecture">Architecture</a></li>
-            <!--<li><a href="solutions.html">Solutions</a></li>-->
-            <li><a href="api.html">Resources</a></li>
-            <li><a href="http://developer.triniti.ai">Go to Console</a></li>
-          </ul>
-          <ul class="main-menu">
-            <h3>Contact Us</h3>
-            <li><a href="#">Email</a></li>
-          </ul>
+        <div class="logoWrapper">
+          <div class="logo"><%= image_tag "images/logo-beta-blue.png"  %></div>
+          <div class="tagline">Create natural conversational experiences</div>
+          <div class="copyright">Copyright © 2018 | All rights reserved.</div>
         </div>
+        <div class="menu-row">
+          <ul class="main-menu">
+            <h3>Company</h3>
+            <li><a href="index.html">Active.ai</a></li>
+            <li><a href="index.html">About us</a></li>
+            <li><a href="index.html">Team</a></li>
+            <li><a href="index.html">Jobs</a></li>
+            <li><a href="index.html">Press</a></li>
+          </ul>
+          <ul class="main-menu">
+            <h3>Products</h3>
+            <li><a href="index.html">Features</a></li>
+            <li><a href="index.html">Pricing</a></li>
+            <li><a href="index.html">Customers</a></li>
+            <li><a href="index.html">Join the waiting list</a></li>
+          </ul>
+          <ul class="main-menu">
+            <h3>Community</h3>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <ul class="main-menu">
+            <h3>Support</h3>
+            <li><a href="#">Email us</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
       </div>
+      <hr style="width: 90%">
       <div class="footer-bottom">
-        <p class="copyright">Copyright © 2018</p>
-          <div class="footer-bottom-left">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Use</a>
+        <div class="footer-bottom-left">
+          <img class="social" style="width: 10px;height: 20px;" src="images/facebook.png">
+          <img class="social" src="images/google.png">
+          <img class="social" src="images/twitter.png">
+          <img class="social" src="images/linkedin.png">
         </div>
-
+        <div class="footer-bottom-right">
+          <a href="#">PRIVACY POLICY</a>
+          <a href="#">TERMS AND CONDITIONS</a>
+        </div>
       </div>
     </div>
   </body>
 </html>
+
+
+<!-- js for clicking on mobile menu button> -->
+<script>
+$('.mobileMenu').on('click', function(e) {
+    $(this).toggleClass("open");
+    e.preventDefault();
+    $('.mobileSpan').toggleClass("expand");
+    e.preventDefault();
+  });
+</script>
