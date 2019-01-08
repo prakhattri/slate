@@ -8,10 +8,6 @@ set -x
 
 set -o pipefail
 
-chmod +x /opt/deploy/load_ssm
-/opt/deploy/load_ssm $ENVIRONMENT
-source .env
-
 echo "Deploying docs apps"
 cp "/opt/deploy/docs-dev.conf" "/etc/supervisord.d/docs-dev.ini"
 

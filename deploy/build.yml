@@ -4,7 +4,6 @@ env:
   variables:
    AWS_ACCOUNT_ID : "940330296631"
    IMAGE_REPO_NAME : "triniti-ai-docs"
-   ENVIRONMENT : "/Triniti-ai-web/test"
    CLUSTER_NAME : "test"
    SERVICE_NAME : "test"
    PORT : 4567
