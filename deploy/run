@@ -9,6 +9,6 @@ set -x
 set -o pipefail
 
 echo "Deploying docs apps"
-cp "/opt/deploy/docs-dev.conf" "/etc/supervisord.d/docs-dev.ini"
+cp -r "/opt/deploy/docs-dev.conf" "/etc/supervisord.d/docs-dev.ini"
 
 supervisord -n -c /etc/supervisord.conf
