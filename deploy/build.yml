@@ -1,0 +1,39 @@
+version: 0.2
+
+env:
+  variables:
+   AWS_ACCOUNT_ID : "940330296631"
+   IMAGE_REPO_NAME : "triniti-ai-docs"
+   ENVIRONMENT : "/Triniti-ai-web/test"
+   CLUSTER_NAME : "test"
+   SERVICE_NAME : "test"
+   PORT : 4567
+   VERSION: "latest"
+phases:
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR...
+      - $(aws ecr get-login --no-include-email --region $AWS_REGION)
+      - GIT_SHA=$(git rev-parse --short HEAD)
+      - echo $GIT_SHA
+      - who am i
+      - cat /etc/issue
+      - apt-get update && apt-get -y install gettext-base
+  build:
+    commands:
+      - cat Dockerfile | envsubst > Dockerfile.docs
+      - docker build -t $IMAGE_REPO_NAME:$GIT_SHA -f Dockerfile.docs .
+      - docker tag $IMAGE_REPO_NAME:$GIT_SHA $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$IMAGE_REPO_NAME:$GIT_SHA
+      - docker tag $IMAGE_REPO_NAME:$GIT_SHA $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$IMAGE_REPO_NAME:$VERSION
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Pushing the Docker image...
+      - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$IMAGE_REPO_NAME:$GIT_SHA
+      - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$IMAGE_REPO_NAME:$VERSION
+#      - TASK_ID=`aws ecs list-tasks --cluster $CLUSTER_NAME --service $SERVICE_NAME | python -c "import sys, json; print json.load(sys.stdin)[\"taskArns\"][0]"`
+#      - echo $TASK_ID
+#      - echo "if [ '${CLUSTER_NAME}' == 'staging' ] ; then aws ecs stop-task --task '$TASK_ID' --cluster $CLUSTER_NAME ; fi" > /tmp/kill
+#      - bash /tmp/kill
+#      - echo "if [ '${CLUSTER_NAME}' == 'frontend' ] ; then aws ecs stop-task --task '$TASK_ID' --cluster $CLUSTER_NAME ; fi" > /tmp/kill
+#      - bash /tmp/kill
