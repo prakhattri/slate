@@ -12,4 +12,4 @@ echo "Deploying docs apps"
 
 cp -r "/opt/deploy/docs-dev.conf" "/etc/supervisor/conf.d/docs-dev.conf"
 
-supervisord -c /etc/supervisor/supervisord.conf
+supervisord -n -c /etc/supervisor/supervisord.conf
