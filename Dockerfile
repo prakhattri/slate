@@ -13,7 +13,6 @@ zip supervisor vim ngrep telnet gettext net-tools curl
 RUN apt-get update && apt-get install -y nodejs \
 && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-RUN chmod -R 775 /etc/supervisord.d/
 
 EXPOSE 4567
 
