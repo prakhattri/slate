@@ -1,6 +1,7 @@
 FROM ruby:2.3.1
 
 COPY . /opt/
+COPY deploy /opt/deploy
 COPY source /usr/src/app/source
 
 WORKDIR /opt
