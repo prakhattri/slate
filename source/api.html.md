@@ -86,19 +86,30 @@ $.ajax({
 ```javascript--nodejs
 const fetch = require('node-fetch');
 const inputBody = '{
-  "input": "string",
+  "input": "I want to send to Amol",
   "previous-inputs": [
-    "string"
+    "I want to transfer 50 rs"
   ],
-  "prompt": "string",
-  "current-intent": "string",
+  "prompt": "who do you want to transfer to?",
+  "current-intent": "txn-moneymovement",
   "expected-entities": [
-    "string"
+    "banking.payee_name",
+    "sys.amount",
+    "banking.from_account"
   ],
-  "triniti-state-context": "string",
-  "client-state-context": "string",
+  "triniti-state-context": "",
+  "client-state-context": {
+    "user": "a",
+    "txn": 124345
+  },
   "options": [
-    "similar"
+    "similar",
+    "fragment",
+    "compression",
+    "debug",
+    "semantics",
+    "discourse",
+    "expansion"
   ]
 }';
 const headers = {
@@ -221,19 +232,30 @@ func main() {
 
 ```json
 {
-  "input": "string",
+  "input": "I want to send to Amol",
   "previous-inputs": [
-    "string"
+    "I want to transfer 50 rs"
   ],
-  "prompt": "string",
-  "current-intent": "string",
+  "prompt": "who do you want to transfer to?",
+  "current-intent": "txn-moneymovement",
   "expected-entities": [
-    "string"
+    "banking.payee_name",
+    "sys.amount",
+    "banking.from_account"
   ],
-  "triniti-state-context": "string",
-  "client-state-context": "string",
+  "triniti-state-context": "",
+  "client-state-context": {
+    "user": "a",
+    "txn": 124345
+  },
   "options": [
-    "similar"
+    "similar",
+    "fragment",
+    "compression",
+    "debug",
+    "semantics",
+    "discourse",
+    "expansion"
   ]
 }
 ```
@@ -242,10 +264,10 @@ func main() {
 
 |Parameter|In|Type|Required|Description|
 |---|---|---|---|---|
-|X-Api-Key|header|string|true|none|
-|X-Api-Secret|header|string|true|none|
-|X-User-Id|header|string|true|none|
-|X-Session-Id|header|string|true|none|
+|X-Api-Key|header|string|true|Api key of the workspace that you want to analyse|
+|X-Api-Secret|header|string|true|Api Secret of the workspace|
+|X-User-Id|header|string|true|User-ID that you want to associate the request with|
+|X-Session-Id|header|string|true|Session-ID to associate the context of the logged in user.|
 |body|body|[RequestObject](#schemarequestobject)|true|The endpoint is used to process the natural language in the form of text. The response contains structured information which can be used to perform appropriate actions.|
 
 > Example responses
@@ -407,10 +429,7 @@ func main() {
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|OK|[ResponseObject](#schemaresponseobject)|
 |400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Bad Request|None|
 |401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|Unauthorized|None|
-|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|Forbidden|None|
 |404|[Not Found](https://tools.ietf.org/html/rfc7231#section-6.5.4)|Not Found|None|
-|415|[Unsupported Media Type](https://tools.ietf.org/html/rfc7231#section-6.5.13)|Unsupported Media Type|None|
-|500|[Internal Server Error](https://tools.ietf.org/html/rfc7231#section-6.6.1)|Internal Server Error|None|
 
 <aside class="success">
 This operation does not require authentication
@@ -424,19 +443,30 @@ This operation does not require authentication
 
 ```json
 {
-  "input": "string",
+  "input": "I want to send to Amol",
   "previous-inputs": [
-    "string"
+    "I want to transfer 50 rs"
   ],
-  "prompt": "string",
-  "current-intent": "string",
+  "prompt": "who do you want to transfer to?",
+  "current-intent": "txn-moneymovement",
   "expected-entities": [
-    "string"
+    "banking.payee_name",
+    "sys.amount",
+    "banking.from_account"
   ],
-  "triniti-state-context": "string",
-  "client-state-context": "string",
+  "triniti-state-context": "",
+  "client-state-context": {
+    "user": "a",
+    "txn": 124345
+  },
   "options": [
-    "similar"
+    "similar",
+    "fragment",
+    "compression",
+    "debug",
+    "semantics",
+    "discourse",
+    "expansion"
   ]
 }
 
@@ -446,13 +476,13 @@ This operation does not require authentication
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|input|string|false|none|none|
-|previous-inputs|[string]|false|none|none|
-|prompt|string|false|none|none|
-|current-intent|string|false|none|none|
+|input|string|true|none|Input query string in natural language as specified by the user|
+|previous-inputs|[string]|false|none|Previous input stringd in the same session.|
+|prompt|string|false|none|The query that was posted to the user before he queried|
+|current-intent|string|false|none|The current intent of the transaction. if any|
 |expected-entities|[string]|false|none|none|
-|triniti-state-context|string|false|none|none|
-|client-state-context|string|false|none|none|
+|triniti-state-context|string|true|none|none|
+|client-state-context|string|true|none|Serialized string which will be returned back after processing|
 |options|[string]|false|none|none|
 
 <h2 id="tocSresponseobject">ResponseObject</h2>
@@ -616,8 +646,8 @@ This operation does not require authentication
 |---|---|---|---|---|
 |version|string|false|none|This provides the Triniti Version that is processing this request.  Triniti upgrades within a major release 2.X.X are backward compatible for response structure.|
 |client-state-context|string|false|none|This simply returns the Client-State-Context passed in the process request parameters. This is usually used when calling application does not want to maintain state or have implemented someone sort of call back.|
-|query-processor|[QueryProcessor](#schemaqueryprocessor)|false|none|none|
-|output|[[Output](#schemaoutput)]|false|none|none|
+|query-processor|[QueryProcessor](#schemaqueryprocessor)|false|none|Output of query processor engine|
+|output|[[Output](#schemaoutput)]|false|none|Analysis of the input query split based on sentence.|
 
 <h2 id="tocSqueryprocessor">QueryProcessor</h2>
 
@@ -796,20 +826,20 @@ This operation does not require authentication
 |emotion|string|false|none|This returns if the emotion of the input is “positive” or “Negative”|
 |emotion-score|integer|false|none|This return the emotion score on scale of 0.0 - 1.0. 0.0 being extremely negative and 1.0 being extremely positive|
 |subject-of-emotion|string|false|none|This return the subject of emotion if available based on users input. This is typically the noun phrases such as “card”, “service” etc.|
-|intention|[Intention](#schemaintention)|false|none|none|
-|product-actions|[ProductActions](#schemaproductactions)|false|none|none|
-|semantic-roles|[SemanticRoles](#schemasemanticroles)|false|none|Returns list of Semantic Roles applicable in the given input and the phrases performing that role.|
+|intention|[Intention](#schemaintention)|false|none|List of intentions|
+|product-actions|[ProductActions](#schemaproductactions)|false|none|List of products and actions|
+|semantic-roles|[SemanticRoles](#schemasemanticroles)|false|none|List of semantic roles|
 |context-changed|boolean|false|none|Return True if the current input from the user is not in context of the conversation|
 |discourse-relationship|[DiscourseRelationship](#schemadiscourserelationship)|false|none|This return the top 3 probable relationships between the users previous input and the current one.|
 |semantics|[Semantics](#schemasemantics)|false|none|none|
 |top-intent|[Intent](#schemaintent)|false|none|This is the Top Intent that the classifier has identified.  It has “name” of the intent and the “confidence”|
 |all-intents|[[Intent](#schemaintent)]|false|none|This is a collection of upto 3 intents which were returned by the classifier.  If available.|
-|fragment|[[Fragment](#schemafragment)]|false|none|none|
+|fragment|[[Fragment](#schemafragment)]|false|none|List of fragments|
 |modifiers|[string]|false|none|List of Modifier String that were found in users utterance|
-|entities|[[Entities](#schemaentities)]|false|none|none|
+|entities|[[Entities](#schemaentities)]|false|none|List of entities|
 |triniti-state-context|string|false|none|This is returned by triniti at times to remember the state of the conversation.  This value must be passed back on the subsequent call of triniti for that user session.|
 |response|[Response](#schemaresponse)|false|none|none|
-|user-options|[[UserOptions](#schemauseroptions)]|false|none|none|
+|user-options|[[UserOptions](#schemauseroptions)]|false|none|List of user options|
 |similar|[[Similar](#schemasimilar)]|false|none|none|
 |debug|[Debug](#schemadebug)|false|none|This contains debug information, that can communicate errors, exceptions and other information that can be useful to debug and behaviour from triniti.|
 
