@@ -110,6 +110,11 @@ Once you have chosen your plan, go ahead and create your first workspace by sele
 Congratulations!!! You have now created your very first workspace !!!
 
 ## Adding FAQs
+### What is a Spotter?
+
+Spotter is a knowledge base cognitive QnA and product of Triniti.Ai . Cognitive QnA is an intelligent service , which given a set of FAQ's as an input , is able to intelligently answer a wide range of related questions. It does not require any annotation or tagging of input data and needs minimal variants of the input questions, additionally it is able to create variants using its powerful paraphrasing capability. Cognitive QnA works best for financial services industry , but can works across all other domains as well with relevant data augmentation.
+
+
 ## Adding a Dialog
 ## Adding a Smalltalk
 
