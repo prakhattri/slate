@@ -134,18 +134,26 @@ Spotter’s Key features are:
 (CreateAccount2.png)
 
 (Note: All fields are mandatory)
+
 4.	Password should be 
 ..*	should be 8 characters long
 ..*	at least one ‘upper case letter’
 ..*	at least one ‘small case letter’
 +	at least one ‘Special Character’( @, #, $ .. )
 +	at least one ‘Number’
+
 5.	Click on the “Create Account” button.
+
 6.	An email notification will be sent to the registered email address.
+
 (CreateAccount3.png)
+
 (CreateAccount4.png)
+
 7.	Access your registered email & click on the “Verify Email” button.
+
 8.	Verification will be completed successfully & the Home page will be displayed.
+
 (CreateAccount5.png)
 
 ### How to Recover an account?
