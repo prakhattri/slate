@@ -128,17 +128,15 @@ Spotter’s Key features are:
 1.	Open URL: <https://developer.triniti.ai/>
 2.	Click on the “Create Account” link.
 3.	Enter First name, Last name, Email id, Mobile number & your desired password.
-
 (CreateAccount1.png)
 
 (CreateAccount2.png)
-
 ... (Note: All fields are mandatory)
 
 4.	Password should be 
-..*	should be 8 characters long
-..*	at least one ‘upper case letter’
-..*	at least one ‘small case letter’
+*	should be 8 characters long
+*	at least one ‘upper case letter’
+*	at least one ‘small case letter’
 +	at least one ‘Special Character’( @, #, $ .. )
 +	at least one ‘Number’
 
