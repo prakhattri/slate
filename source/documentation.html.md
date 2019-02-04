@@ -138,6 +138,7 @@ Spotter’s Key features are:
 - at least one ‘small case letter’
 - at least one ‘Special Character’( @, #, $ .. )
 - at least one ‘Number’
+
 5.	Click on the “Create Account” button.
 6.	An email notification will be sent to the registered email address.(CreateAccount3.png)(CreateAccount4.png)
 7.	Access your registered email & click on the “Verify Email” button.
