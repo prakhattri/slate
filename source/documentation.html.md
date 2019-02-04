@@ -31,7 +31,7 @@ You can register to [triniti.ai](#https://triniti.ai) by following these steps.
 
 > At the moment, we accept only sign ups using corporate email addresses. Triniti portal does not recognise emails created via free service such as  example@gmail.com, example@yahoo.com or any other similar Id.
 
-* Fill in the form. 
+* Fill in the form.
 
 
 > While creating your password, make sure to make it at least eight characters long with at least one special character.
@@ -42,9 +42,9 @@ You can register to [triniti.ai](#https://triniti.ai) by following these steps.
 A veriﬁcation email will be sent to the email address you have used, to create your triniti account. Open the email and follow the instructions given to complete creating your account. This will lead you to the Triniti website’s home page.
 
 
-Congratulations. You have created your first triniti account! 
+Congratulations. You have created your first triniti account!
 
-We are so happy to welcome you onboard. Eagerly looking forward to collaborate and grow along with you! 
+We are so happy to welcome you onboard. Eagerly looking forward to collaborate and grow along with you!
 
 ## Login to your triniti account
 
@@ -52,15 +52,15 @@ We are so happy to welcome you onboard. Eagerly looking forward to collaborate a
 
 * Open a new tab from your browser.
 * Type in [https://developer.triniti.ai](#https://developer.triniti.ai)
-* Enter your email id and password and select the  “Login” button. 
+* Enter your email id and password and select the  “Login” button.
 
 ## Recover your Triniti account
 
-To recover your triniti account, 
+To recover your triniti account,
 
 * Open a new tab from your browser.
 * Type in [https://developer.triniti.ai](#https://developer.triniti.ai)
-* Select ‘Recover Account’ at the login page 
+* Select ‘Recover Account’ at the login page
 * Enter the email id you used to created your triniti account.
 * Click on “Recover”.
 
@@ -69,9 +69,9 @@ An email will be sent to your mail address. Follow the instructions given in the
 
 # Defining your user experience
 
-**Workspace** as the name indicates, is a space that triniti provides you for you to do the bot building process. It is similar to a digital folder that you will be provided with, upon purchase to start with building your bot. 
+**Workspace** as the name indicates, is a space that triniti provides you for you to do the bot building process. It is similar to a digital folder that you will be provided with, upon purchase to start with building your bot.
 
-## Create your very first workspace. 
+## Create your very first workspace.
 
 > Before you could start, make sure you have a Triniti.ai account. If you do not have an account, go to triniti’s login page and create an account.
 
@@ -90,7 +90,7 @@ This section describes how to create and try out your first triniti.ai workspace
 
 
 > Refer to (project types)[#projecttypes] to understand each of its features.
- 
+
 * Along with different base data sets to bootstrap your workspace. (Just that the questions will be treated in that domain and our bot will understand words that make sense in that domain.)
  - [Retail-Banking](#retail-banking)
  - [Corporate-Banking](#corporate-banking)
@@ -127,11 +127,11 @@ Spotter’s Key features are:
 
 1.	Open URL: https://developer.triniti.ai/
 2.	Click on the “Create Account” link.
-3.	Enter First name, Last name, Email id, Mobile number & your desired password. 
+3.	Enter First name, Last name, Email id, Mobile number & your desired password.
 (CreateAccount1.png)
 (CreateAccount2.png)
 (Note: All fields are mandatory)
-4.	Password should be 
+4.	Password should be
 ⋅⋅*	should be 8 characters long
 ⋅⋅*	at least one ‘upper case letter’
 ⋅⋅*	at least one ‘small case letter’
@@ -144,6 +144,7 @@ Spotter’s Key features are:
 7.	Access your registered email & click on the “Verify Email” button.
 8.	Verification will be completed successfully & the Home page will be displayed.
 (CreateAccount5.png)
+9. check 
 
 ### How to Recover an account?
 
@@ -172,7 +173,7 @@ Spotter’s Key features are:
 
 ### How to setup FAQ (import from excel, csv or from website URL)?
 
-1.	Click on workshop name, and import the FAQ to Train 
+1.	Click on workshop name, and import the FAQ to Train
 2.	On Importing the File, the list of Added FAQ is shown in the FAQ page
 3.	On importing from URL, copy paste the website FAQ page URL
 4.	Select Import button
