@@ -16,7 +16,7 @@
 }
 html {
   font-family: 'Gotham'!important;
-} 
+}
 html {
  /* font-family: 'Montserrat'; */
 }
@@ -31,7 +31,7 @@ h1{
 h3,p,a{font-family:'Gotham Book', sans-serif;}
 img{max-width:100%;}
 p.subheader{
-  font-size:15px;
+  font-size:14px;
 }
 .home__header {
   height: 800px;
@@ -39,23 +39,24 @@ p.subheader{
   background: url(images/bg.png) no-repeat center;
 }
 .navbar,.home__header{
-  background-size: cover;
-  background-image: url(../images/bg.png);
+  background-size: 35%;
+    background-position-y: 20%;
+    background-image: url(../images/hero-new@3x.png);
 }
 .home__header .navbar{
   background-image:none;
 }
 .home__header h1{
-  color:#fff;
+  color:black;
   font-size:35px;
   font-weight:100;
   letter-spacing:normal;
-  margin-top:213px;
-  font-family: 'Gotham Medium'
+  margin-top:453px;
+  font-family: 'Gotham Book',sans-serif;
 }
 .home__header p{
-  color:#fff;
-  font-size:20px;
+  color:black;
+  font-size:14px;
   margin-bottom: 45px;
   margin-top: 30px;
 }
@@ -76,10 +77,10 @@ p.subheader{
   max-width:100%;
 }
 nav.navbar.navbar-expand-lg.static-top {
-  background-color: #062339;
+/*  background-color: #062339;*/
 }
 .navbar-nav li a{
-  color:#fff;
+  color: black;
 }
 .navbar-nav li ul{
   z-index:40;
@@ -148,6 +149,13 @@ li.nav-item {
 .section .container{
   margin-top: 0px;
 }
+#usp .container{
+  border-top:2px solid #c3c3c3;
+  padding-top:40px;
+  padding-bottom:50px;
+}
+#usp h3{font-size:16px;font-weight:bold;padding-bottom:15px;}
+#usp p{font-size:14px;color:#4a4a4a;}
 #architecture{
   margin-top:30px;
   margin-bottom:30px;
@@ -166,25 +174,135 @@ li.nav-item {
   font-size:12px;
   padding:0 20px;
 }
+#cta{
+  padding-top:100px;
+  padding-bottom:115px;
+  background:rgba(74, 144, 226,0.045);
+}
+#cta h2{font-size:32px;}
+.cta-input{padding-top:50px;}
+.cta-input .input-wrap{padding-bottom:30px;}
+.cta-input input{border-top-left-radius: 4px;border-bottom-left-radius:4px;
+  border: solid 1px #d3dee3;padding-left:25px;
+  background-color: #ffffff;width:80%;height:54px;    vertical-align: middle;}
+  .cta-input button{background:#0e2337;color:#fff;width:20%;height:54px;border-top-left-radius:0;border-bottom-left-radius:0;}
+.containerCheck {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.containerCheck input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.containerCheck:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerCheck input:checked ~ .checkmark {
+  background-color: #0e2337;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.containerCheck input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerCheck .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 #operation{
- padding:60px 0;
+ padding:60px 0 120px;
 }
 #operation h1{
-  font-size: 42px;
+  font-size: 24px;
     font-weight: 500;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.24;
     letter-spacing: -0.8px;
     text-align: center;
-    color: #333333;
+    color: #0e2337;
+    margin-bottom:60px;
 }
-#operation p{
-  color:#fff;
-  font-weight:300;
+#operation .doc-item{
+  background:#fff;
+  border-radius: 8px;
+  border: solid 2px #fff;
+box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.1);
+padding:30px 25px 0;
+height:180px;
+margin-bottom:20px;
+}
+#operation .doc-item:hover{
+  border: solid 2px #4a90e2;
+}
+#operation .doc-item .doc-img{
+
+  width:64px;float:left;
+}
+#operation .doc-item .doc-img .doc-img-wrap{
+  max-width:64px;
+  background:#f0f4f7;
+  border-radius:50%;
+  padding:16px;
+}
+#operation .doc-item .doc-img img{
+  width:32px;
+}
+#operation .doc-item .doc-text{
+  float:left;width:calc(100% - 64px);text-align:left;padding-left:20px;
+}
+#operation .doc-item h3{font-size:16px;font-weight:bold;padding-bottom:18px;}
+#operation .doc-item p{color:#4a4a4a;font-size:14px;}
+#operation .doc-item .doc-footer p{
+  color:#4a90e2;text-align:right;
+  font-weight:300;font-size:12px;
 }
 .main-footer{
   overflow:auto;
+  padding-top:80px;
   width:100%;
   position:relative;
   z-index:31;
@@ -210,7 +328,6 @@ li.nav-item {
   width:100%;
   min-height:280px;
 }
-.subfooter .row{padding-top:40px;}
 .subfooter h3{
   font-size:14px;
   font-weight:bolder;
@@ -231,23 +348,29 @@ li.nav-item {
   font-size: 13px;
   font-weight: 500;
 }
+.nav-link{font-size:16px;margin:0 20px;font-weight:bold;}
 a[name="consoleLink"] {
-  border: 1px solid white;
-  font-size: 12px;
+  border: 2px solid black;
+  font-size: 16px;
+  font-weight:bold;
+  padding-left:25px!important;
+  padding-right:25px!important;
+  border-radius:5px;
 }
 .startPrompt {
   width: 200px;
   height: 50px;
-  background-color: #ffffff;
-  font-size: 12px;
-  font-family: 'Gotham';
-  font-weight: 500;
+  background-color: #062339;
+  font-size: 16px;
+  font-family: 'Gotham Book',sans-serif;
+  font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 3px;
   text-align: center;
-  color: #062339;
+  border-radius:5px;
+  color: #ffffff;
   border-style: none;
   outline: none;
 }
@@ -270,6 +393,7 @@ div.row.header {
 }
 div#operation {
   position: relative;
+  background:#f0f4f7;
 }
 div#operation p.subheader {
   font-size: 16px;
@@ -410,7 +534,7 @@ img[src="images/tick.png"] {
   .col-6.col-md-2 {
     min-height: unset!important;
   }
-  
+
 }
 @media (max-width: 376px) {
   img[src="images/triniti-section1.png"] {
@@ -465,13 +589,13 @@ img[src="images/tick.png"] {
 @media (max-width: 501px) {
   .col-sm-6.legal {
     margin-left: 17%;
-  } 
+  }
 }
 
 @media (max-width: 501px) {
   .col-sm-6.legal {
     margin-left: 10%;
-  } 
+  }
 }
 /*End for iphone 6/7/8 */
 
@@ -482,7 +606,11 @@ img[src="images/tick.png"] {
   width: 100%;
   z-index: 9999999;
   position: fixed;
-  background-color: #062339; 
+  background-color: #FFF;
+  box-shadow: 0px 2px 5px 1px #DDDDDD;
+-webkit-box-shadow: 0px 2px 5px 1px #DDDDDD;
+-moz-box-shadow: 0px 2px 5px 1px #DDDDDD;
+-o-box-shadow: 0px 2px 5px 1px #DDDDDD;
 }
 
 .list-title {
@@ -502,7 +630,7 @@ img[src="images/tick.png"] {
 
 .listWrapper {
   margin-top: 15px;
-  height: 38px; 
+  height: 38px;
 }
 
 .listWrapper a{
@@ -515,10 +643,10 @@ img[src="images/tick.png"] {
 
 @media (max-width: 991px){
   .navbar-nav {
-     height: 100vh; 
+     height: 100vh;
   }
   .ca_hamburger {display: inline-block;width:30px;height:21px;position:relative;}
-.ca_hamburger span {width:100%;height:2px;background: #fff;position: absolute;left: 0;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s; }
+.ca_hamburger span {width:100%;height:2px;background: #0e2337;position: absolute;left: 0;-webkit-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s; }
 .ca_hamburger span:nth-child(1){top:0;}
 .ca_hamburger span:nth-child(2){top:10px;-webkit-transform: translate(0, -50%);-ms-transform: translate(0, -50%);transform: translate(0, -50%); }
 .ca_hamburger span:nth-child(3){top:18px;}
@@ -610,7 +738,7 @@ button.learn:hover {
 .underlineLearnPrompt a{
   text-decoration: none;
   color: #5d5d5d;
-  
+
 }
 .subheader.security {
   font-size:14px;
@@ -622,5 +750,5 @@ button.learn:hover {
 }
 a.nav-link.nohover {
   display: none!important;
-} 
+}
 /*End for security page */
