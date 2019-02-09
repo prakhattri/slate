@@ -7,16 +7,34 @@ search: true
 ---
 
 # Triniti.ai
+# Overview
+# Quick Start
 Crafting intelligent micro conversations
 
-# A HOW TO GUIDE
+#Concepts
+##Workspaces
+##Intents
+##Entities
+##Dialog
+##Acronymns
+##Fullfillment
+##SmallTalk
+##CognitiveQnA (FAQ)
+##Channels
+##Training & Provisioning
+##Analytics
+##Reports
+##Settings
+##Versioning
+
+# How To / Tutorials
 
 -A triniti Guide
 
 ## Overview
 This tutorial walks you through the process of building a workspace from scratch. It also provides you the best practices in designing a workspace.
 
-# Account Setup
+## Account Setup
 
 ![Account Setup](account.gif)
 
@@ -67,11 +85,11 @@ To recover your triniti account,
 An email will be sent to your mail address. Follow the instructions given in the email to recover your triniti account.
 
 
-# Defining your user experience
+## Defining your user experience
 
 **Workspace** as the name indicates, is a space that triniti provides you for you to do the bot building process. It is similar to a digital folder that you will be provided with, upon purchase to start with building your bot. 
 
-## Create your very first workspace. 
+### Create your very first workspace. 
 
 > Before you could start, make sure you have a Triniti.ai account. If you do not have an account, go to triniti’s login page and create an account.
 
@@ -255,32 +273,89 @@ b.	Select the “Settings” icon displayed in webSDK channel.
 
 
 
-## Adding a Dialog
-## Adding a Smalltalk
+### Adding a Dialog
+### Adding a Smalltalk
 
-# Optimising the AI engine
+## Optimising the AI engine
 
-## Training
-## Launching
+### Training
+### Launching
 
-# Fullfillment
+## Fullfillment
 
-## Webhook
-## Workflow
+### Webhook
+### Workflow
 
-# Publishing
+## Publishing
 
-## Testing
-## Go live
+### Testing
+### Go live
 
-# Adding more channels
+## Adding more channels
 
-## Facebook
-## Websdk
-## Skype
-## Telegram
-## Viber
-## Line
+### Facebook
+### Websdk
+### Skype
+### Telegram
+### Viber
+### Line
 
-# Analysing your workspace
+## Analysing your workspace
+
+# API
+# Pre Built Domains
+## Retail Banking (Intents - Supported Entities + Modifiers)
+
+# Data 
+
+## General Guidelines
+## Guidelines for Intents
+## Guidelines for Dialogs
+## Guidelines for Entities
+## Guidelines for CognitiveQnA
+## Guidelines for SmallTalk
+
+# Reference
+
+## Triniti API SDK
+
+## Fulllfillment Response JSON Structure
+## Fulllfillment Response SDK
+## Webhook Signature
+## Workflow Script Reference
+## Webhook Reference
+## HelloTicket
+## HelloWorld
+## Channel SDK's - Web
+## Channel SDK's - IOS Hybrid
+## Channel SDK's - Android Hybrid
+
+
+# Examples
+
+## HelloTicket
+## HelloWorld
+
+# Resources
+## Language Support
+## Infrastructure / Hosting
+## Pricing & Limits
+## Release Notes
+## Roadmap
+## Blog
+
+# Academy
+
+## Webinars
+## Videos
+
+# Support
+
+## Forums
+## KnowledgeBase
+## AskUs
+## SLA's
+
+
+
 ---
