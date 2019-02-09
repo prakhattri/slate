@@ -6,8 +6,9 @@ title: Documentation
 search: true
 ---
 
-# Triniti.ai
 # Overview
+--Triniti.ai
+
 # Quick Start
 Crafting intelligent micro conversations
 
@@ -270,9 +271,6 @@ b.	Select the “Settings” icon displayed in webSDK channel.
 
 
 
-
-
-
 ### Adding a Dialog
 ### Adding a Smalltalk
 
@@ -355,6 +353,11 @@ b.	Select the “Settings” icon displayed in webSDK channel.
 ## KnowledgeBase
 ## AskUs
 ## SLA's
+
+
+
+
+
 
 
 
