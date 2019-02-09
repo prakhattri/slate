@@ -35,17 +35,41 @@ Crafting intelligent micro conversations
 ## Overview
 This tutorial walks you through the process of building a workspace from scratch. It also provides you the best practices in designing a workspace.
 
-## Account Setup
+## Manage Your Account
+
 
 ![Account Setup](account.gif)
 
-## Create your first Triniti account
+### Signup for a New Account
+
+
+
 
 You can register to [triniti.ai](#https://triniti.ai) by following these steps.
 
 * Open a new tab from your browser.
 * Type in [https://developer.triniti.ai](#https://developer.triniti.ai)
 * Then, click on “Create Account” on top.
+
+1.	Open URL: <https://developer.triniti.ai/>
+2.	Click on the “Create Account” link.
+3.	Enter First name, Last name, Email id, Mobile number & your desired password.
+(CreateAccount1.png)
+(CreateAccount2.png)
+... (Note: All fields are mandatory)
+4.	Password should be 
+
+- should be 8 characters long
+- at least one ‘upper case letter’
+- at least one ‘small case letter’
+- at least one ‘Special Character’( @, #, $ .. )
+- at least one ‘Number’
+
+5.	Click on the “Create Account” button.
+6.	An email notification will be sent to the registered email address.(CreateAccount3.png)(CreateAccount4.png)
+7.	Access your registered email & click on the “Verify Email” button.
+8.	Verification will be completed successfully & the Home page will be displayed.
+(CreateAccount5.png)
 
 
 > At the moment, we accept only sign ups using corporate email addresses. Triniti portal does not recognise emails created via free service such as  example@gmail.com, example@yahoo.com or any other similar Id.
@@ -65,7 +89,7 @@ Congratulations. You have created your first triniti account!
 
 We are so happy to welcome you onboard. Eagerly looking forward to collaborate and grow along with you! 
 
-## Login to your triniti account
+### Login to your triniti account
 
 > If you already have an account, select the ‘login’ button on top where it reads "Already have an account? Login"
 
@@ -73,7 +97,7 @@ We are so happy to welcome you onboard. Eagerly looking forward to collaborate a
 * Type in [https://developer.triniti.ai](#https://developer.triniti.ai)
 * Enter your email id and password and select the  “Login” button. 
 
-## Recover your Triniti account
+### Recover your Triniti account
 
 To recover your triniti account, 
 
@@ -86,12 +110,25 @@ To recover your triniti account,
 An email will be sent to your mail address. Follow the instructions given in the email to recover your triniti account.
 
 
-## Defining your user experience
+1.	Open a browser on your laptop/desktop.
+2.	Enter the URL & press enter.
+3.	Click on the “Recover Account”
+4.	Enter your registered email address & “Send email” button.(RecoverAccount1.png)
+
+- Password reset confirmation will be displayed with an option of “Resending email” in case email not received in your registered mail id.(RecoverAccount2.png)
+- An email notification will be sent to your registered email address with further details(RecoverAccount3.png)
+- Click on the “Reset password” button on the email notification.
+- Password reset option will be displayed on the browser.
+- Enter your new password & confirm.
+(RecoverAccount4.png)
+
+
+##Manage Your WorkSpace
+
+
+### Create a Workspace
 
 **Workspace** as the name indicates, is a space that triniti provides you for you to do the bot building process. It is similar to a digital folder that you will be provided with, upon purchase to start with building your bot. 
-
-### Create your very first workspace. 
-
 > Before you could start, make sure you have a Triniti.ai account. If you do not have an account, go to triniti’s login page and create an account.
 
 This section describes how to create and try out your first triniti.ai workspace.
@@ -128,68 +165,20 @@ Once you have chosen your plan, go ahead and create your first workspace by sele
 
 Congratulations!!! You have now created your very first workspace !!!
 
-## Adding FAQs
-### What is a Spotter?
+## Manage users for a Workspace
 
-Spotter is a knowledge base cognitive QnA and product of Triniti.Ai . Cognitive QnA is an intelligent service , which given a set of FAQ's as an input , is able to intelligently answer a wide range of related questions. It does not require any annotation or tagging of input data and needs minimal variants of the input questions, additionally it is able to create variants using its powerful paraphrasing capability. Cognitive QnA works best for financial services industry , but can works across all other domains as well with relevant data augmentation.
+## Delete a Workspace
 
-### Key Features of Spotter
+## Manage Settings 
 
-Spotter’s Key features are:
+## Manage Messages 
 
-*	Import FAQs from any website FAQ Page.
-*	Import Q&A from a excel format or CSV format.
-*	Keyword extraction
-*	Generate Variants
+## Manage FAQ
 
-### How to create an account in Triniti.ai?
+### Adding New FAQ's
 
-1.	Open URL: <https://developer.triniti.ai/>
-2.	Click on the “Create Account” link.
-3.	Enter First name, Last name, Email id, Mobile number & your desired password.
-(CreateAccount1.png)
-(CreateAccount2.png)
-... (Note: All fields are mandatory)
-4.	Password should be 
 
-- should be 8 characters long
-- at least one ‘upper case letter’
-- at least one ‘small case letter’
-- at least one ‘Special Character’( @, #, $ .. )
-- at least one ‘Number’
-
-5.	Click on the “Create Account” button.
-6.	An email notification will be sent to the registered email address.(CreateAccount3.png)(CreateAccount4.png)
-7.	Access your registered email & click on the “Verify Email” button.
-8.	Verification will be completed successfully & the Home page will be displayed.
-(CreateAccount5.png)
-
-### How to Recover an account?
-
-1.	Open a browser on your laptop/desktop.
-2.	Enter the URL & press enter.
-3.	Click on the “Recover Account”
-4.	Enter your registered email address & “Send email” button.(RecoverAccount1.png)
-
-- Password reset confirmation will be displayed with an option of “Resending email” in case email not received in your registered mail id.(RecoverAccount2.png)
-- An email notification will be sent to your registered email address with further details(RecoverAccount3.png)
-- Click on the “Reset password” button on the email notification.
-- Password reset option will be displayed on the browser.
-- Enter your new password & confirm.
-(RecoverAccount4.png)
-
-### How to Create a bot?
-
-1.	Login with valid credentials welcome message will be displayed.
-(WelcomeMessage1.png)
-2.	Click on Start button, and create New workspace by choosing Language, country, project type and pre-built.
-3.	Click on Next button and choose the plan (Basic or Premium) and select CREATE WORKSPACE.
-4.	Enter workspace name and select the project type
-5.	Select Next
-6.	On successful creation of workspace, the created workshop name will be displayed
-(CreateWorkspace1.png)
-
-### How to setup FAQ (import from excel, csv or from website URL)?
+#### How to setup FAQ (import from excel, csv or from website URL)?
 
 1.	Click on workshop name, and import the FAQ to Train 
 2.	On Importing the File, the list of Added FAQ is shown in the FAQ page
@@ -197,7 +186,7 @@ Spotter’s Key features are:
 4.	Select Import button
 (ImportFAQ1.png)
 
-### How to change the FAQ response format?
+#### How to change the FAQ response format?
 
 1.	Add New question in user asks field, add the answer in Bot Answer field and select default channel.
 2.	Click on Add Question Set.
@@ -230,19 +219,19 @@ E.	SSML:
 
 - Click on SSML by selecting change format, enter the SSML answer in write answer field.(ImportFAQ11.png)
 
-### How to add Quick replies:
+#### How to add Quick replies:
 
 - Click on Add Quick replies, enter the title and pay load in the fields type quick reply title and type quick payload respectively.(ImportFAQ12.png)
 - For all question able to add tags, below the bot answer.(ImportFAQ13.png)
 - Once after adding the user ask, bot answer and tag field click on Add question set for creating the FAQ.(ImportFAQ14.png)
 
-### How to add Smalltalk?
+#### How to add Smalltalk?
 
 a.	Select Smalltalk option from the left menu
 b.	Click on view to edit the answer.
 (SmallTalk1.png)
 
-### How to set the minimum confidence score?
+#### How to set the minimum confidence score?
 
 We can set the Minimum confidence score to get the answers from bot. If user utterances are less than the minimum confidence score configured then then error message will be displayed.
 
@@ -254,7 +243,7 @@ d.	Configure “Default Error” message from messages tab.
 (General2.png)
 (General3.png)
 
-### How to customise websSDK?
+#### How to customise websSDK?
 
 We can customise the webSDK look and feel.
 
@@ -264,41 +253,153 @@ b.	Select the “Settings” icon displayed in webSDK channel.
 (Channel2.png)
 (Channel3.png)
 
-### How to embed webSDK into website?
-### Code Snippet?
+#### How to embed webSDK into website?
+#### Code Snippet?
+
+### Managing KeyPhrases
+### Handling Unknown Words
+### Formatting FAQ Responses
+### Redirecting FAQ's to Workflows
+### Setting up Channel Specific Responses
+### Handling Ambiguity
+### Managing FAQ Settings
+### Fine Tuning FAQ's
+
+## Define Intents
+
+### Adding Intents
+### Annotating & Linking Entities
+### Importing & Exporting Intents
+
+## Manage Dialogs
+
+### { Direct Link } to Concept
+
+## Definine Entities
+
+### Adding Entities
+### Managing Dictionary Entities
+### Managing XXX Entities
+### Importing & Exporting Entities
+### Default Entities
+
+## Manage Small Talk
+
+### { Direct Link } to Concept
+
+## Define Acronymns
+
+### { Direct Link } to Concept
+
+## Manage Fullfillment via Webhooks
+
+### Defining a Webhook
+### Webhook Signature
+### Conversational Workflow Framework
+### Handling Responses
+
+## Manage Fullfillment via Workflows
 
 
+### Defining a Workflow
+### Configuring a Workflow
+### Handling Validations
+### Business Logic via Webhooks
+### Scripting via Javascript
+### Scripting via Groovy
+### Conversation Model Reference
+### Handling Responses
+### Debugging Workflows
+
+## Manage Channels
+
+### Managing Web & Hybrid
+### Customizing Web & Hybrid Channels
+### Managing Android 
+### Managing IOS 
+### Managing Facebook Messenger
+### Managing Line
+### Managing Telegram
+### Managing Viber
+### Managing Slack
+### Managing Skype
+### Managing Skype for Business
+### Managing Slack
+### Managing Cortana
+### Managing Alexa
+### Managing Google Assistant & xx
+### Managing Twilio
+### Managing AWS Connect
+### Managing Twilio XXX
+### Managing Jio
+### Managing Livebank
+### Managing WeChat
+### Managing Authentication for Social Channels
+### Managing Authentication for IOT Channels
+
+## Train ,Deploy & Publish your Workspace
 
 
+### Training your Workspace
+### Starting your Workspace
+### Publishing your Workspace
 
-### Adding a Dialog
-### Adding a Smalltalk
+## Manage Self Learning 
 
-## Optimising the AI engine
+### Analysing the Report
+### Incorporating Intent Utterances
+### Incorporating Dialog Utterances
+### Incorporating SmallTalk Utterances
+### Incorporating FAQ Utterances
 
-### Training
-### Launching
+## Manage Customers & Support
 
-## Fullfillment
+### Analysing the Report
+### Customer Profile
+### Customer Conversation History
 
-### Webhook
-### Workflow
+## Manage Metrics
 
-## Publishing
+## Manage Billing & Subscription
 
-### Testing
-### Go live
+### Setting up Profile
+### Setting up Payment Information
+### Managing Plans
+### Managing Invoices
 
-## Adding more channels
 
-### Facebook
-### Websdk
-### Skype
-### Telegram
-### Viber
-### Line
+## Debug Issues
 
-## Analysing your workspace
+### Using SmartView
+### Using SmartAssist
+### Cognitive QnA Issues
+### Classifier Issues
+### NLP Issues
+### NLU Issues
+### Context Issues
+### Small Talk Issues
+
+## Improve Accuracy 
+
+### Using SmartAssist
+### Finetuning Settings
+
+
+## Manage Updates & Upgrades
+
+## Use Pre Built Domains
+
+### Cross Link
+
+## Manage Ontology
+
+## Migrate from other Platforms
+
+### Migrating from Watson
+### Migrating from Luis
+### Migrating from Api.ai
+
+
 
 # API
 # Pre Built Domains
