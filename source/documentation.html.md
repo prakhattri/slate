@@ -670,7 +670,7 @@ try {
 
 **Overview**
 
-Morfeus enables financial institutions to deliver consumer services using Intuition and Automation over multiple natural channels of engagement. The Morfeus iOS SDK provides a lightweight conversational / messaging UX interface for users to interact to the Morfeus Platform. The SDK enables rich conversation components to be embedded in existing iOS Mobile Apps.
+iOS SDK provides a lightweight conversational / messaging UX interface for users to interact to the Triniti Platform. The SDK enables rich conversation components to be embedded in existing iOS Mobile Apps.
 
 
 **Prerequisites**
