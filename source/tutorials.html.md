@@ -914,7 +914,6 @@ By default, analytics is disabled in SDK. To enable analytics set enableAnalytic
 @end
 ```
 
-```
 
 
 ## Managing Facebook Messenger
