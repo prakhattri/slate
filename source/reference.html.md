@@ -6,33 +6,19 @@ title: Reference
 search: true
 ---
 
-# Workspace Types
-## FAQ
-## Conversational AI
+# Reference
 
-# Features
-## Spell Check
-## NLP / NLU
-## Smalltalk
-## FAQ
-## Training Events
-## Model Updates
-## Workflow
-## Context Handling
-## Auto Scale
-## Reinforcement learning
+## Triniti API SDK
 
-# Pre-built Data types
-## Retail Banking
-## Corporate Banking
-## Capital Markets
-## Insurance
-## Wallets
-## Medical
-## Custom
-
-# Payment Plans
-
-# Response Templates
+## Fulllfillment Response JSON Structure
+## Fulllfillment Response SDK
+## Webhook Signature
+## Workflow Script Reference
+## Webhook Reference
+## HelloTicket
+## HelloWorld
+## Channel SDK's - Web
+## Channel SDK's - IOS Hybrid
+## Channel SDK's - Android Hybrid
 
 ---
