@@ -11,7 +11,7 @@ RUN apt-get -y install \
 zip supervisor vim ngrep telnet gettext net-tools curl
 
 RUN apt-get update && apt-get install -y nodejs \
-&& apt-get install python
+&& apt-get install python \
 && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 EXPOSE 4567
