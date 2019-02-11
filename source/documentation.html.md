@@ -5,29 +5,6 @@ title: Documentation
 
 search: true
 ---
-
-# Overview
---Triniti.ai
-
-# Quick Start
-Crafting intelligent micro conversations
-
-#Concepts
-##Workspaces
-##Intents
-##Entities
-##Dialog
-##Acronymns
-##Fullfillment
-##SmallTalk
-##CognitiveQnA (FAQ)
-##Channels
-##Training & Provisioning
-##Analytics
-##Reports
-##Settings
-##Versioning
-
 # How To / Tutorials
 
 -A triniti Guide
@@ -1072,61 +1049,6 @@ By default, analytics is disabled in SDK. To enable analytics set enableAnalytic
 ### Migrating from Luis
 ### Migrating from Api.ai
 
-
-
-# API
-# Pre Built Domains
-## Retail Banking (Intents - Supported Entities + Modifiers)
-
-# Data 
-
-## General Guidelines
-## Guidelines for Intents
-## Guidelines for Dialogs
-## Guidelines for Entities
-## Guidelines for CognitiveQnA
-## Guidelines for SmallTalk
-
-# Reference
-
-## Triniti API SDK
-
-## Fulllfillment Response JSON Structure
-## Fulllfillment Response SDK
-## Webhook Signature
-## Workflow Script Reference
-## Webhook Reference
-## HelloTicket
-## HelloWorld
-## Channel SDK's - Web
-## Channel SDK's - IOS Hybrid
-## Channel SDK's - Android Hybrid
-
-
-# Examples
-
-## HelloTicket
-## HelloWorld
-
-# Resources
-## Language Support
-## Infrastructure / Hosting
-## Pricing & Limits
-## Release Notes
-## Roadmap
-## Blog
-
-# Academy
-
-## Webinars
-## Videos
-
-# Support
-
-## Forums
-## KnowledgeBase
-## AskUs
-## SLA's
 
 
 
