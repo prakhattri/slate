@@ -37,6 +37,7 @@ under the License.
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
     <%= stylesheet_link_tag :screen, media: :screen %>
     <%= stylesheet_link_tag :print, media: :print %>
+    <%= stylesheet_link_tag :documentation, media: :documentation %>
     <% if current_page.data.search %>
       <%= javascript_include_tag  "all" %>
     <% else %>
@@ -58,14 +59,14 @@ under the License.
           <li><a href="index.html">Overview</a></li>
           <li><a class="nav-link" href="security.html">Security</a></li>
           <li value="dropdown"><a href="documentation.html">Docs</a></li>
-          <li style="margin-right: 35px;"><a href="http://developer.triniti.ai" style="border: 1px solid white;padding: 8.4px 13px; margin-right: 0px;">Go to Console</a></li>
+          <li style="margin-right: 35px;"><a href="http://developer.triniti.ai" style="border: 1px solid white;padding: 8.4px 13px; margin-right:0px;">Go to Console</a></li>
         </ul>
       <div class="dropdown">
         <div class="listWrapper">
           <div class="dropdown-text"><a href="quickstart.html">Quick Start</a></div>
-          <div class="dropdown-text"><a href="concepts.html">Concepts</a></div>
+          <div class="dropdown-text current"><a href="concepts.html">Concepts</a></div>
           <div class="dropdown-text"><a href="tutorials.html">Tutorials</a></div>
-          <div class="dropdown-text current"><a href="api.html">API</a></div>
+          <div class="dropdown-text"><a href="api.html">API</a></div>
           <div class="dropdown-text"><a href="prebuilt.html">Pre Built Domains</a></div>
           <div class="dropdown-text"><a href="reference.html">Reference</a></div>
           <div class="dropdown-text"><a href="example.html">Examples</a></div>
@@ -106,7 +107,7 @@ under the License.
       <% end %>
       <% if current_page.data.search %>
         <div class="search">
-          <input type="text" class="search" id="input-search" placeholder="Search">
+          <input type="text" class="search" id="input-search" placeholder="Search Documentation">
         </div>
         <ul class="search-results"></ul>
       <% end %>
@@ -135,11 +136,11 @@ under the License.
       <% end %>
     </div>
     <div class="page-wrapper">
-      <div class="dark-box"></div>
+      <!--<div class="dark-box"></div>-->
       <div class="content">
         <%= page_content %>
       </div>
-      <div class="dark-box">
+      <!--<div class="dark-box">
         <% if language_tabs.any? %>
           <div class="lang-selector">
             <% language_tabs.each do |lang| %>
@@ -151,7 +152,7 @@ under the License.
             <% end %>
           </div>
         <% end %>
-      </div>
+      </div>-->
     </div>
 
     <div class="main-footer" style="display:none;">
@@ -204,6 +205,7 @@ under the License.
     </div>
   </body>
 </html>
+
 
 <!-- js for clicking on mobile menu button> -->
 <script>
