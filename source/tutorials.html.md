@@ -6,19 +6,19 @@ title: Tutorials
 search: true
 ---
 
-# How To / Tutorials
+## How To / Tutorials
 
 -A triniti Guide
 
-## Overview
+# Overview
 This tutorial walks you through the process of building a workspace from scratch. It also provides you the best practices in designing a workspace.
 
-## Manage Your Account
+# Manage Your Account
 
 
 ![Account Setup](images/account.gif)
 
-### Signup for a New Account
+## Signup for a New Account
 
 
 
@@ -67,7 +67,7 @@ Congratulations. You have created your first triniti account!
 
 We are so happy to welcome you onboard. Eagerly looking forward to collaborate and grow along with you! 
 
-### Login to your triniti account
+## Login to your triniti account
 
 > If you already have an account, select the ‘login’ button on top where it reads "Already have an account? Login"
 
@@ -75,7 +75,7 @@ We are so happy to welcome you onboard. Eagerly looking forward to collaborate a
 * Type in [https://developer.triniti.ai](#https://developer.triniti.ai)
 * Enter your email id and password and select the  “Login” button. 
 
-### Recover your Triniti account
+## Recover your Triniti account
 
 To recover your triniti account, 
 
@@ -101,10 +101,8 @@ An email will be sent to your mail address. Follow the instructions given in the
 (RecoverAccount4.png)
 
 
-##Manage Your WorkSpace
 
-
-### Create a Workspace
+# Create Your First Workspace
 
 **Workspace** as the name indicates, is a space that triniti provides you for you to do the bot building process. It is similar to a digital folder that you will be provided with, upon purchase to start with building your bot. 
 > Before you could start, make sure you have a Triniti.ai account. If you do not have an account, go to triniti’s login page and create an account.
@@ -143,6 +141,9 @@ Once you have chosen your plan, go ahead and create your first workspace by sele
 
 Congratulations!!! You have now created your very first workspace !!!
 
+# Manage Your Workspace 
+
+
 ## Manage users for a Workspace
 
 ## Delete a Workspace
@@ -151,12 +152,12 @@ Congratulations!!! You have now created your very first workspace !!!
 
 ## Manage Messages 
 
-## Manage FAQ
+# Manage FAQ
 
-### Adding New FAQ's
+## Adding New FAQ's
 
 
-#### How to setup FAQ (import from excel, csv or from website URL)?
+### How to setup FAQ (import from excel, csv or from website URL)?
 
 1.	Click on workshop name, and import the FAQ to Train 
 2.	On Importing the File, the list of Added FAQ is shown in the FAQ page
@@ -234,66 +235,66 @@ b.	Select the “Settings” icon displayed in webSDK channel.
 #### How to embed webSDK into website?
 #### Code Snippet?
 
-### Managing KeyPhrases
-### Handling Unknown Words
-### Formatting FAQ Responses
-### Redirecting FAQ's to Workflows
-### Setting up Channel Specific Responses
-### Handling Ambiguity
-### Managing FAQ Settings
-### Fine Tuning FAQ's
+## Managing KeyPhrases
+## Handling Unknown Words
+## Formatting FAQ Responses
+## Redirecting FAQ's to Workflows
+## Setting up Channel Specific Responses
+## Handling Ambiguity
+## Managing FAQ Settings
+## Fine Tuning FAQ's
 
-## Define Intents
+# Define Intents
 
-### Adding Intents
-### Annotating & Linking Entities
-### Importing & Exporting Intents
+## Adding Intents
+## Annotating & Linking Entities
+## Importing & Exporting Intents
 
-## Manage Dialogs
+# Manage Dialogs
 
-### { Direct Link } to Concept
+## Direct Link  to Concept
 
-## Definine Entities
+# Definine Entities
 
-### Adding Entities
-### Managing Dictionary Entities
-### Managing XXX Entities
-### Importing & Exporting Entities
-### Default Entities
+## Adding Entities
+## Managing Dictionary Entities
+## Managing XXX Entities
+## Importing & Exporting Entities
+## Default Entities
 
-## Manage Small Talk
+# Manage Small Talk
 
-### { Direct Link } to Concept
+## Direct Link to Concept
 
-## Define Acronymns
+# Define Acronymns
 
-### { Direct Link } to Concept
+## Direct Link  to Concept
 
-## Manage Fullfillment via Webhooks
+# Manage Fullfillment via Webhooks
 
-### Defining a Webhook
-### Webhook Signature
-### Conversational Workflow Framework
-### Handling Responses
+## Defining a Webhook
+## Webhook Signature
+## Conversational Workflow Framework
+## Handling Responses
 
-## Manage Fullfillment via Workflows
+# Manage Fullfillment via Workflows
 
 
-### Defining a Workflow
-### Configuring a Workflow
-### Handling Validations
-### Business Logic via Webhooks
-### Scripting via Javascript
-### Scripting via Groovy
-### Conversation Model Reference
-### Handling Responses
-### Debugging Workflows
+## Defining a Workflow
+## Configuring a Workflow
+## Handling Validations
+## Business Logic via Webhooks
+## Scripting via Javascript
+## Scripting via Groovy
+## Conversation Model Reference
+## Handling Responses
+## Debugging Workflows
 
-## Manage Channels
+# Manage Channels
 
-### Managing Web & Hybrid
-### Customizing Web & Hybrid Channels
-### Managing Android 
+## Managing Web & Hybrid
+## Customizing Web & Hybrid Channels
+## Managing Android 
 
 **Overview**
 
