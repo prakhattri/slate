@@ -56,15 +56,15 @@ p.subheader{
 }
 .home__header p{
   color:black;
-  font-size:14px;
+  font-size:15px;
   margin-bottom: 45px;
   margin-top: 30px;
 }
+.home__header p span{display:block;}
 .home__header img{
   max-width:400px;
   width:100%;
   padding:10px 0;
-  margin:10px 0 0;
 }
 .logo {
   display: block;
@@ -155,7 +155,7 @@ li.nav-item {
   padding-bottom:50px;
 }
 #usp h3{font-size:16px;font-weight:bold;padding-bottom:15px;}
-#usp p{font-size:14px;color:#4a4a4a;}
+#usp p{font-size:15px;color:#4a4a4a;}
 #architecture{
   margin-top:30px;
   margin-bottom:30px;
@@ -180,6 +180,8 @@ li.nav-item {
   background:rgba(74, 144, 226,0.045);
 }
 #cta h2{font-size:32px;}
+#cta p{color:#9c9ea0;}
+#cta p.subtitle{color:#abb5bd;}
 .cta-input{padding-top:50px;}
 .cta-input .input-wrap{padding-bottom:30px;}
 .cta-input input{border-top-left-radius: 4px;border-bottom-left-radius:4px;
@@ -193,6 +195,7 @@ li.nav-item {
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 16px;
+  color:#9c9ea0;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -270,13 +273,14 @@ li.nav-item {
   background:#fff;
   border-radius: 8px;
   border: solid 2px #fff;
-box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.1);
+box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.05);
 padding:30px 25px 0;
 height:180px;
-margin-bottom:20px;
+margin-bottom:25px;
 }
 #operation .doc-item:hover{
   border: solid 2px #4a90e2;
+box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.1);
 }
 #operation .doc-item .doc-img{
 
@@ -294,12 +298,13 @@ margin-bottom:20px;
 #operation .doc-item .doc-text{
   float:left;width:calc(100% - 64px);text-align:left;padding-left:20px;
 }
-#operation .doc-item h3{font-size:16px;font-weight:bold;padding-bottom:18px;}
-#operation .doc-item p{color:#4a4a4a;font-size:14px;}
+#operation .doc-item h3{font-size:16px;font-weight:normal;padding-bottom:18px;color:#4a4a4a;font-family:"Gotham Bold",sans-serif;}
+#operation .doc-item p{color:#4a4a4a;font-size:15px;}
 #operation .doc-item .doc-footer p{
   color:#4a90e2;text-align:right;
   font-weight:300;font-size:12px;
 }
+#operation .doc-item .doc-footer p.coming{color:#4a4a4a;}
 .main-footer{
   overflow:auto;
   padding-top:80px;
@@ -307,6 +312,10 @@ margin-bottom:20px;
   position:relative;
   z-index:31;
   color:black !important;
+}
+.main-footer .main-menu li a{
+  font-size:11.2px;
+  letter-spacing: 1.12px;
 }
 .footer-bottom a{
   text-decoration:none;
@@ -329,7 +338,7 @@ margin-bottom:20px;
   min-height:280px;
 }
 .subfooter h3{
-  font-size:14px;
+  font-size:15px;
   font-weight:bolder;
   text-transform:uppercase;
 }
@@ -343,37 +352,43 @@ margin-bottom:20px;
 .main-menu li a{
   text-decoration:none;
   text-transform:uppercase;
-  color:black;
+  color:#0e2337;
   line-height:3;
   font-size: 13px;
   font-weight: 500;
 }
 .nav-link{font-size:16px;margin:0 20px;font-weight:bold;}
 a[name="consoleLink"] {
-  border: 2px solid black;
+  border: 2px solid #0e2337;
   font-size: 16px;
   font-weight:bold;
   padding-left:25px!important;
   padding-right:25px!important;
   border-radius:5px;
 }
+a[name="consoleLink"]:hover {
+  background:#0e2337;color:#fff;
+}
 .startPrompt {
   width: 200px;
   height: 50px;
-  background-color: #062339;
+  display:block;
+  padding-top:14px;
+  margin:0 auto;
+  background-color: #0e2337;
   font-size: 16px;
   font-family: 'Gotham Book',sans-serif;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  letter-spacing: 3px;
   text-align: center;
   border-radius:5px;
   color: #ffffff;
-  border-style: none;
+  border:2px solid #0e2337;
   outline: none;
 }
+.startPrompt:hover{color:#0e2337;text-decoration:none;background:#fff;border:2px solid #0e2337;}
 h1.operationsHeader {
   font-size: 42px;
   font-weight: 500;
@@ -393,7 +408,7 @@ div.row.header {
 }
 div#operation {
   position: relative;
-  background:#f0f4f7;
+  background:#f9f9f9;
 }
 div#operation p.subheader {
   font-size: 16px;
@@ -437,7 +452,7 @@ img[src="images/tick.png"] {
   height: 67px;
 }
 .copyright {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
@@ -460,8 +475,9 @@ img[src="images/tick.png"] {
   margin-top: 16.8px;
 }
 .container.footer-bottom {
-  padding-top: 17px;
+  padding-top: 27px;
   padding-bottom: 37px;
+  border-top: 2px solid #d2d2d2;
 }
 
 #footerMobile {

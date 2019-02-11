@@ -1,11 +1,10 @@
 ---
-layout: documentation
+layout: quickstart
 
-title: Documentation
+title: Quick Start
 
 search: true
 ---
-
 
 # Quick Start
 Crafting intelligent micro conversations
@@ -14,10 +13,5 @@ Crafting intelligent micro conversations
 ## Setting up HelloTicket
 ## Testing HelloTicket
 ## Enhancing HelloTicket
-
-
-
-
-
 
 ---

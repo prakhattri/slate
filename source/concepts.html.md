@@ -1,7 +1,7 @@
 ---
-layout: documentation
+layout: concepts
 
-title: Documentation
+title: Concepts
 
 search: true
 ---
@@ -23,10 +23,6 @@ search: true
 ##Reports
 ##Settings
 ##Versioning
-
-
-
-
 
 
 
