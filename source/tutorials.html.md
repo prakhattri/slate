@@ -116,24 +116,24 @@ This section describes how to create and try out your first triniti.ai workspace
 * Once you have gained access to our Trinti dashboard, click on “Create Workspace +”.
 * Type in your workspace name, choose your preferred language, your country and choose the project type you want to create and select the “Next” button.
 * We provide three types of workspace.
- - [Cognitive QnA](#faq-workspace)
- - [Conversational AI](#conversational-ai-workspace)
- - [Cognitive QnA & Conversational AI](#faq-workspace)
+- [Cognitive QnA](#faq-workspace)
+- [Conversational AI](#conversational-ai-workspace)
+- [Cognitive QnA & Conversational AI](#faq-workspace)
 
 
 > Refer to (project types)[#projecttypes] to understand each of its features.
- 
+
 * Along with different base data sets to bootstrap your workspace. (Just that the questions will be treated in that domain and our bot will understand words that make sense in that domain.)
- - [Retail-Banking](#retail-banking)
- - [Corporate-Banking](#corporate-banking)
- - [Wallets](#wallets)
- - [Insurance](#insurance)
- - [Medical](#medical)
- - [Custom](#custom)
+- [Retail-Banking](#retail-banking)
+- [Corporate-Banking](#corporate-banking)
+- [Wallets](#wallets)
+- [Insurance](#insurance)
+- [Medical](#medical)
+- [Custom](#custom)
 * We provide multiple plans in order to target your specific needs. Please go through the [features](#features) section to understand our offerings. We have the following payment plans.
- - [Free](#free)
- - [Basic](#basic)
- - [Premium](#premium)
+- [Free](#free)
+- [Basic](#basic)
+- [Premium](#premium)
 
 > Depending on the plan you choose, the costs may vary. Look into the (pricing section)[#pricingsection]  for details.
 
@@ -298,7 +298,7 @@ b.	Select the “Settings” icon displayed in webSDK channel.
 
 **Overview**
 
- Android SDK provides a lightweight conversational / messaging UX interface for users to interact to the Triniti Platform. The SDK enables rich conversation components to be embedded in existing Android Mobile Apps.
+Android SDK provides a lightweight conversational / messaging UX interface for users to interact to the Triniti Platform. The SDK enables rich conversation components to be embedded in existing Android Mobile Apps.
 
 **Pre Requisites**
 
@@ -322,61 +322,61 @@ Download the Morfeus SDK from the given URL or other channels communicated to yo
 1.  Create a new libs folder under app directory if it does not exist.
 1.  Add the following dependencies to your app level `build.gradle` file.
 
-    ```
+```
 dependencies {
-    ...
-   // Voice SDK
-   compile ('com.morfeus.android.voice:MFSDKVoice:1.1.3')
-   // gRPC
-   compile 'io.grpc:grpc-okhttp:1.13.1'
-   compile 'io.grpc:grpc-protobuf-lite:1.13.1'
-   compile 'io.grpc:grpc-stub:1.13.1'
-   compile 'io.grpc:grpc-android:1.13.1'
-   compile 'javax.annotation:javax.annotation-api:1.2'
+...
+// Voice SDK
+compile ('com.morfeus.android.voice:MFSDKVoice:1.1.3')
+// gRPC
+compile 'io.grpc:grpc-okhttp:1.13.1'
+compile 'io.grpc:grpc-protobuf-lite:1.13.1'
+compile 'io.grpc:grpc-stub:1.13.1'
+compile 'io.grpc:grpc-android:1.13.1'
+compile 'javax.annotation:javax.annotation-api:1.2'
 
-    // OAuth2 for Google API
-   compile('com.google.auth:google-auth-library-oauth2-http:0.7.0') {
-        exclude module: 'httpclient'
-    }
-   compile(name: 'MFSDKHybridKit', ext: 'aar')
-   compile 'com.google.guava:guava:20.0'
-   compile 'com.android.support:appcompat-v7:25.0.0'
-    ...
+// OAuth2 for Google API
+compile('com.google.auth:google-auth-library-oauth2-http:0.7.0') {
+exclude module: 'httpclient'
 }
- repositories {
-    flatDir {
-        dirs 'libs'
-    }
+compile(name: 'MFSDKHybridKit', ext: 'aar')
+compile 'com.google.guava:guava:20.0'
+compile 'com.android.support:appcompat-v7:25.0.0'
+...
+}
+repositories {
+flatDir {
+dirs 'libs'
+}
 }
 ```
 
-	Note:If you get 64k method limit exception during compile time then add following code into your app-level build.gradle file.
+Note:If you get 64k method limit exception during compile time then add following code into your app-level build.gradle file.
 
-	```
+```
 android {
-    defaultConfig {
-        multiDexEnabled true
-    }
+defaultConfig {
+multiDexEnabled true
+}
 }
 dependencies {
-    compile 'com.android.support:multidex:1.0.1'
+compile 'com.android.support:multidex:1.0.1'
 }
 ```
-	Add the following lines to your project level `build.gradle` file.
+Add the following lines to your project level `build.gradle` file.
 
-	```
+```
 allprojects {
-   repositories {
-       google()
-       jcenter()
-       maven {
-           url "http://artifacts.active.ai/artifactory/android-sdk-release"
-           credentials {
-               username = "artifactory_username"
-               password = "artifactory_password"
-           }
-       }
+repositories {
+google()
+jcenter()
+maven {
+   url "http://artifacts.active.ai/artifactory/android-sdk-release"
+   credentials {
+       username = "artifactory_username"
+       password = "artifactory_password"
    }
+}
+}
 }
 ```
 
@@ -389,24 +389,24 @@ Add following lines to your Activity/Application where you want to initialize th
 
 ```
 try {
-    // Properties to pass before initializing sdk
-    MFSDKProperties properties = new MFSDKProperties
-                    .Builder(END_POINT_URL)
-                    .addBot(BOT_ID, BOT_NAME)
-                    .setSpeechAPIKey("YourSpeechAPIKey")
-                    .build();
-      
-    // sMFSDK is public static field variable
-    sMFSDK = new MFSDKMessagingManagerKit
-                    .Builder(applicationContext)
-                    .setSdkProperties(properties)
-                    .build();
-      
-    // Initialize sdk
-    sMFSDK.initWithProperties();
-  
+// Properties to pass before initializing sdk
+MFSDKProperties properties = new MFSDKProperties
+	    .Builder(END_POINT_URL)
+	    .addBot(BOT_ID, BOT_NAME)
+	    .setSpeechAPIKey("YourSpeechAPIKey")
+	    .build();
+
+// sMFSDK is public static field variable
+sMFSDK = new MFSDKMessagingManagerKit
+	    .Builder(applicationContext)
+	    .setSdkProperties(properties)
+	    .build();
+
+// Initialize sdk
+sMFSDK.initWithProperties();
+
 } catch (MFSDKInitializationException e) {
-    Log.e("MFSDK", e.getMessage());
+Log.e("MFSDK", e.getMessage());
 }
 ```
 
@@ -414,32 +414,11 @@ try {
 **Properties:**
 
 
-<table>
-  <tr>
-   <td><strong>Property</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>BOT_ID
-   </td>
-   <td>The unique ID for the bot.
-   </td>
-  </tr>
-  <tr>
-   <td>BOT_NAME
-   </td>
-   <td>The bot name to display on top of chat screen.
-   </td>
-  </tr>
-  <tr>
-   <td>END_POINT_URL
-   </td>
-   <td>The bot API URL.
-   </td>
-  </tr>
-</table>
+|Property|Description|
+|-----|-|
+|BOT_ID|The unique ID for the bot.
+|BOT_NAME|The bot name to display on top of chat screen.
+|END_POINT_URL|The bot API URL.
 
 Above properties you can get through nevigating to Channels > Android click on settings icon.
 
@@ -449,29 +428,26 @@ Above properties you can get through nevigating to Channels > Android click on s
 
 To invoke chat screen call `showScreen()` method of `MFSDKMessagingManagerKit`. Here, `sMSDK` is an instance variable of `MFSDKMessagingManagerKit`.
 
-
 ```
 // Open chat screen
 sMFSDK.showScreen(activityContext, BOT_ID);
 ```
-
 
 You can get instance of `MFSDKMessagingManagerKit` by calling `getInstance() `of `MFSDKMessagingManagerKit`. Please make sure before calling `getInstance()` you have initialized the MFSDK. Please check following code snippet. 
 
 
 ```
 try {
-    // Get SDK instance
-    MFSDKMessagingManager mfsdk = MFSDKMessagingManagerKit.getInstance();
-  
-    // Open chat screen
-    mfsdk.showScreen(activityContext, BOT_ID);
-  
+// Get SDK instance
+MFSDKMessagingManager mfsdk = MFSDKMessagingManagerKit.getInstance();
+
+// Open chat screen
+mfsdk.showScreen(activityContext, BOT_ID);
+
 } catch (Exception e) {
-    // Throws exception if MFSDK not initialised.
+// Throws exception if MFSDK not initialised.
 }
 ```
-
 
 **Compile and Run**
 
@@ -492,9 +468,9 @@ userInfo.put("CUSTOMER_ID", customerID);
 userInfo.put("SESSION_ID", sessionID); // Pass your app sessionID
 
 MFSDKSessionProperties sessionProperties = new MFSDKSessionProperties
-                                              .Builder()
-                                              .setUserInfo(userInfoMap)
-                                              .build();
+				      .Builder()
+				      .setUserInfo(userInfoMap)
+				      .build();
 
 // Open chat screen 
 mMFSdk.showScreen(LoginActivity.this, BOT_ID,  sessionProperties);
@@ -517,41 +493,41 @@ app/build.gradle
 
 ```
 dependencies {
-    ...
-    // Voice SDK dependencies
-    compile ('com.morfeus.android.voice:MFSDKVoice:1.1.3')
-    compile 'io.grpc:grpc-okhttp:1.13.1'
-    compile 'io.grpc:grpc-protobuf-lite:1.13.1'
-    compile 'io.grpc:grpc-stub:1.13.1'
-    compile 'io.grpc:grpc-android:1.13.1'
-    compile 'javax.annotation:javax.annotation-api:1.2'
-    compile('com.google.auth:google-auth-library-oauth2-http:0.7.0') {
-        exclude module: 'httpclient'
-    }
-    ...
+...
+// Voice SDK dependencies
+compile ('com.morfeus.android.voice:MFSDKVoice:1.1.3')
+compile 'io.grpc:grpc-okhttp:1.13.1'
+compile 'io.grpc:grpc-protobuf-lite:1.13.1'
+compile 'io.grpc:grpc-stub:1.13.1'
+compile 'io.grpc:grpc-android:1.13.1'
+compile 'javax.annotation:javax.annotation-api:1.2'
+compile('com.google.auth:google-auth-library-oauth2-http:0.7.0') {
+exclude module: 'httpclient'
 }
- 
+...
+}
+
 repositories {
-    flatDir {
-        dirs 'libs'
-    }
+flatDir {
+dirs 'libs'
+}
 }
 ```
 project/build.gradle
 
 ```
 allprojects {
-   repositories {
-       google()
-       jcenter()
-       maven {
-           url "http://artifacts.active.ai/artifactory/android-sdk-release"
-           credentials {
-               username = "artifactory_username"
-               password = "artifactory_password"
-           }
-       }
+repositories {
+google()
+jcenter()
+maven {
+   url "http://artifacts.active.ai/artifactory/android-sdk-release"
+   credentials {
+       username = "artifactory_username"
+       password = "artifactory_password"
    }
+}
+}
 }
 ```
 
@@ -561,19 +537,19 @@ Call `setSpeechAPIKey(String apiKey)` method of` MFSDKProperties` builder to pas
 
 ```
 try {
-    // Set speech API key
-    MFSDKProperties properties = new MFSDKProperties
-                    .Builder(END_POINT_URL)
-                    ...
-                    .setSpeechAPIKey("YourSpeechAPIKey")
-                    ... 
-                    .build();
-      
-   } catch (MFSDKInitializationException e) {
-    Log.e("MFSDK", e.getMessage());
+// Set speech API key
+MFSDKProperties properties = new MFSDKProperties
+	    .Builder(END_POINT_URL)
+	    ...
+	    .setSpeechAPIKey("YourSpeechAPIKey")
+	    ... 
+	    .build();
+
+} catch (MFSDKInitializationException e) {
+Log.e("MFSDK", e.getMessage());
 }
 ```
- 
+
 **Set Speech-To-Text language**
 
 In MFSDKHybridKit, English(India) is the default language set for Speech-To-Text. You can change STT language by passing valid language code using `setSpeechToTextLanguage("lang-Country") `method of` MFSDKProperties.Builder.` You can find list of supported language code [here](https://cloud.google.com/speech-to-text/docs/languages).
@@ -581,16 +557,16 @@ In MFSDKHybridKit, English(India) is the default language set for Speech-To-Text
 
 ```
 try {
-    // Set speech to text language
-    MFSDKProperties properties = new MFSDKProperties
-                    .Builder(END_POINT_URL)
-                    ...
-                    .setSpeechToTextLanguage("en-IN")
-                    ... 
-                    .build();
-      
-   } catch (MFSDKInitializationException e) {
-    Log.e("MFSDK", e.getMessage());
+// Set speech to text language
+MFSDKProperties properties = new MFSDKProperties
+	    .Builder(END_POINT_URL)
+	    ...
+	    .setSpeechToTextLanguage("en-IN")
+	    ... 
+	    .build();
+
+} catch (MFSDKInitializationException e) {
+Log.e("MFSDK", e.getMessage());
 }
 ```
 
@@ -602,23 +578,22 @@ English(India) is the default language set for Text-To-Speech. You can change TT
 
 ```
 try {
-    // Set text to speech language
-    MFSDKProperties properties = new MFSDKProperties
-                    .Builder(END_POINT_URL)
-                    ...
-                    .setTextToSpeechLanguage("en_IN")
-                    ... 
-                    .build();
-      
-   } catch (MFSDKInitializationException e) {
-    Log.e("MFSDK", e.getMessage());
+// Set text to speech language
+MFSDKProperties properties = new MFSDKProperties
+	    .Builder(END_POINT_URL)
+	    ...
+	    .setTextToSpeechLanguage("en_IN")
+	    ... 
+	    .build();
+
+} catch (MFSDKInitializationException e) {
+Log.e("MFSDK", e.getMessage());
 }
 ```
 
 **Provide Speech Suggestions**
 
 You can provide additional contextual information for processing user speech. To provide speech suggestions add list of words and phrases into `MFSpeechSuggestion.json` file and place it under assets folder of your project. You can add maximum 150 phrases into` MFSpeechSuggestion.json`. To see sample `MFSpeechSuggestion.json`, please download it from [here](http://artifacts.active.ai/artifactory/android-sdk-release/com/morfeus/android/voice/MFSDKVoice/MFSpeechSuggestion.json)<span style="text-decoration:underline;">.</span>
-
 
 
 **Enable Analytics**
@@ -628,23 +603,23 @@ By default, analytics is disabled in SDK. To enable analytics set `enableAnalyti
 
 ```
 try {
-    // Pass analytics properties
-    MFSDKProperties properties = new MFSDKProperties
-                    .Builder(END_POINT_URL)
-                    ...
-                    .enableAnalytics(true)
-                    .setAnalyticsProvider("Your Analytics provider code")
-                    .setAnalyticsId("Your Analytics ID")
-                    ... 
-                    .build();
-      
+// Pass analytics properties
+MFSDKProperties properties = new MFSDKProperties
+	    .Builder(END_POINT_URL)
+	    ...
+	    .enableAnalytics(true)
+	    .setAnalyticsProvider("Your Analytics provider code")
+	    .setAnalyticsId("Your Analytics ID")
+	    ... 
+	    .build();
+
 } catch (MFSDKInitializationException e) {
-    Log.e("MFSDK", e.getMessage());
+Log.e("MFSDK", e.getMessage());
 }
 ```
 
 
-   
+
 ### Managing IOS 
 
 **Overview**
@@ -673,7 +648,6 @@ $ sudo gem install cocoapods
 $ pod setup
 ```
 
-
 **2. Update .netrc file**
 
 The Morfeus iOS SDK are stored in a secured artifactory. Cocoapods handles the process of linking these frameworks with the target application. When artifactory requests for authentication information when installing `MFSDKWebKit`, cocoapods reads credential information from the file` .netrc`, located in `~/ directory`.
@@ -690,20 +664,17 @@ password <NETRC_PASSWORD>
 One example of .netrc file structure with sample credentials is as below. Please check with the development team for the actual credentials to use.
 
 
-
 <img src="images/ios_config1.png" alt="drawing" width="400"/>
 
 
 **Steps to create or update .netrc file**
 
-
-
 1.  Start up Terminal in mac
-1.  Type "`cd ~/`" to go to your home folder
-1.  Type "`touch .netrc`", this creates a new file, If a file with name `.netrc` not found.
-1.  Type "`open -a TextEdit .netrc`", this opens `.netrc` file in TextEdit
-1.  Append the machine name and credentials shared by development team in above format, if it does not exist already.
-1.  Save and exit TextEdit
+2.  Type "`cd ~/`" to go to your home folder
+3.  Type "`touch .netrc`", this creates a new file, If a file with name `.netrc` not found.
+4.  Type "`open -a TextEdit .netrc`", this opens `.netrc` file in TextEdit
+5.  Append the machine name and credentials shared by development team in above format, if it does not exist already.
+6.  Save and exit TextEdit
 
 **3. Install the pod**
 
@@ -714,19 +685,17 @@ To integrate `'MFSDKWebKit'` into your Xcode project, specify the below code in 
 source 'https://github.com/CocoaPods/Specs.git'
 #Voice support is available from iOS 8.0 and above
 platform :ios, '7.1'
- 
+
 target 'TargetAppName' do
-    pod '<COCOAPOD_NAME>'
+pod '<COCOAPOD_NAME>'
 end
 ```
-
 
 Once added above code, run install command in your project directory, where your "`podfile`" is located.
 
 ```
 $ pod install
 ```
-
 
 If you get an error like "Unable to find a specification for <pod-name>", then run below command to update your specs to latest version.
 
@@ -735,9 +704,7 @@ If you get an error like "Unable to find a specification for <pod-name>", then r
 $ pod repo update
 ```
 
-
 When you want to update your pods to latest version then run below command.
-
 
 ```
 $ pod update
@@ -758,13 +725,13 @@ Select target open "`Build Settings`" tab and set "`Enable Bitcode`" to "`No`".
 
 Search for ".plist" file in the supporting files folder in your Xcode project. Update NSAppTransportSecurity to describe your app's intended HTTP connection behavior. Please refer [apple documentation](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW33) and choose the best configuration for your app. Below is one sample configuration.
 
- 
+
 
 ```
 <key>NSAppTransportSecurity</key>
 <dict>
-      <key>NSAllowsArbitraryLoads</key>
-      <true/>
+<key>NSAllowsArbitraryLoads</key>
+<true/>
 </dict>
 ```
 
@@ -785,50 +752,28 @@ To invoke chat screen, create MFSDKProperties, MFSDKSessionProperties and then c
 @implementation ViewController
 // Once the button is clicked, show the message screen -(IBAction)startChat:(id)sender
 {
-    MFSDKProperties *params = [[MFSDKProperties alloc] initWithDomain:@"<END_POINT_URL>"];
-    [params addBot:@"<BOT_ID>" botName:@"<BOT_NAME>"]; 
-    params.messagingDelegate = self;
-    [[MFSDKMessagingManager sharedInstance] initWithProperties:params];
-    
-    MFSDKSessionProperties *sessionProperties = [[MFSDKSessionProperties alloc]init];
-    sessionProperties.userInfo = [[NSDictionary alloc] initWithObjectsAndKeys:@"KEY",@"VALUE", nil];
-    [[MFSDKMessagingManager sharedInstance] showScreenWithBotID:@"<BOT_ID>" fromViewController:self withSessionProperties:sessionProperties];
+MFSDKProperties *params = [[MFSDKProperties alloc] initWithDomain:@"<END_POINT_URL>"];
+[params addBot:@"<BOT_ID>" botName:@"<BOT_NAME>"]; 
+params.messagingDelegate = self;
+[[MFSDKMessagingManager sharedInstance] initWithProperties:params];
+
+MFSDKSessionProperties *sessionProperties = [[MFSDKSessionProperties alloc]init];
+sessionProperties.userInfo = [[NSDictionary alloc] initWithObjectsAndKeys:@"KEY",@"VALUE", nil];
+[[MFSDKMessagingManager sharedInstance] showScreenWithBotID:@"<BOT_ID>" fromViewController:self withSessionProperties:sessionProperties];
 }
-  
+
 @end
 ```
 
 
 **Properties:**
-```
 
-<table>
-  <tr>
-   <td><strong>Property</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>BOT_ID
-   </td>
-   <td>The unique ID for the bot
-   </td>
-  </tr>
-  <tr>
-   <td>BOT_NAME
-   </td>
-   <td>The bot name to display on top of chat screen.
-   </td>
-  </tr>
-  <tr>
-   <td>END_POINT_URL
-   </td>
-   <td>The bot API URL
-   </td>
-  </tr>
-</table>
-```
+|Property|Description
+|-|-|
+|BOT_ID|The unique ID for the bot
+|BOT_NAME|The bot name to display on top of chat screen.
+|END_POINT_URL|The bot API URL
+
 Above properties you can get through nevigating to Channels > iOS click on settings icon.
 
 ![alt_text](images/ios_config3.png)
