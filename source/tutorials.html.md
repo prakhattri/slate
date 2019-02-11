@@ -800,7 +800,7 @@ To invoke chat screen, create MFSDKProperties, MFSDKSessionProperties and then c
 
 
 **Properties:**
-
+```
 
 <table>
   <tr>
@@ -828,7 +828,7 @@ To invoke chat screen, create MFSDKProperties, MFSDKSessionProperties and then c
    </td>
   </tr>
 </table>
-
+```
 Above properties you can get through nevigating to Channels > iOS click on settings icon.
 
 ![alt_text](images/ios_config3.png)
@@ -969,50 +969,54 @@ By default, analytics is disabled in SDK. To enable analytics set enableAnalytic
 @end
 ```
 
-### Managing Facebook Messenger
-### Managing Line
-### Managing Telegram
-### Managing Viber
-### Managing Slack
-### Managing Skype
-### Managing Skype for Business
-### Managing Slack
-### Managing Cortana
-### Managing Alexa
-### Managing Google Assistant & xx
-### Managing Twilio
-### Managing AWS Connect
-### Managing Twilio XXX
-### Managing Jio
-### Managing Livebank
-### Managing WeChat
-### Managing Authentication for Social Channels
-### Managing Authentication for IOT Channels
-
-## Train ,Deploy & Publish your Workspace
+```
 
 
-### Training your Workspace
-### Starting your Workspace
-### Publishing your Workspace
+## Managing Facebook Messenger
 
-## Manage Self Learning 
+## Managing Line
+## Managing Telegram
+## Managing Viber
+## Managing Slack
+## Managing Skype
+## Managing Skype for Business
+## Managing Slack
+## Managing Cortana
+## Managing Alexa
+## Managing Google Assistant & xx
+## Managing Twilio
+## Managing AWS Connect
+## Managing Twilio XXX
+## Managing Jio
+## Managing Livebank
+## Managing WeChat
+## Managing Authentication for Social Channels
+## Managing Authentication for IOT Channels
 
-### Analysing the Report
-### Incorporating Intent Utterances
-### Incorporating Dialog Utterances
-### Incorporating SmallTalk Utterances
-### Incorporating FAQ Utterances
+# Train ,Deploy & Publish your Workspace
 
-## Manage Customers & Support
 
-### Analysing the Report
-### Customer Profile
-### Customer Conversation History
+## Training your Workspace
+## Starting your Workspace
+## Publishing your Workspace
 
-## Manage Metrics
+# Manage Self Learning 
 
-## Manage Billing & Subscription
+## Analysing the Report
+## Incorporating Intent Utterances
+## Incorporating Dialog Utterances
+## Incorporating SmallTalk Utterances
+## Incorporating FAQ Utterances
+
+# Manage Customers & Support
+
+## Analysing the Report
+## Customer Profile
+## Customer Conversation History
+
+# Manage Metrics
+
+# Manage Billing & Subscription
 
 ### Setting up Profile
 ### Setting up Payment Information
@@ -1020,7 +1024,7 @@ By default, analytics is disabled in SDK. To enable analytics set enableAnalytic
 ### Managing Invoices
 
 
-## Debug Issues
+# Debug Issues
 
 ### Using SmartView
 ### Using SmartAssist
@@ -1031,21 +1035,21 @@ By default, analytics is disabled in SDK. To enable analytics set enableAnalytic
 ### Context Issues
 ### Small Talk Issues
 
-## Improve Accuracy 
+# Improve Accuracy 
 
 ### Using SmartAssist
 ### Finetuning Settings
 
 
-## Manage Updates & Upgrades
+# Manage Updates & Upgrades
 
-## Use Pre Built Domains
+# Use Pre Built Domains
 
 ### Cross Link
 
-## Manage Ontology
+# Manage Ontology
 
-## Migrate from other Platforms
+# Migrate from other Platforms
 
 ### Migrating from Watson
 ### Migrating from Luis
