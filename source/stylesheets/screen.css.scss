@@ -50,7 +50,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   @extend %default-font;
-  background-color: $main-bg;
+  /*background-color: $main-bg;*/
   height: 100%;
   -webkit-text-size-adjust: none; /* Never autoresize text */
 }
@@ -73,6 +73,11 @@ a{color:#4a90e2;}
   top:0;
   left:0;
   background-color: #062339;
+  .logo{
+    img{
+      width:140px;
+    }
+  }
   .listWrapper {
     margin-top: 15px;
     height: 38px;
