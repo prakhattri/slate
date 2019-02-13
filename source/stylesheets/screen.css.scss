@@ -177,7 +177,7 @@ html, body {
   overflow-y: auto;
   overflow-x: hidden;
   position: fixed;
-  z-index: 11; 
+  z-index: 11;
  /* top: $topbar-height; */
   top: 135px;
   left: 0;
@@ -310,7 +310,7 @@ html, body {
   .toc-link {
     background-image: url(../images/arrow-right.png);
     background-repeat: no-repeat;
-    background-size: 9px;
+    background-size: 7px;
     background-position-x: 95%;
     background-position-y: 50%;
   }
@@ -320,18 +320,18 @@ html, body {
     /* color: $nav-active-text; */
     color: #0a0724;
     background-image: url(../images/arrow-down.png);
-    background-size: 15px;
+    background-size: 12px;
     background-position-x: 95%;
     background-position-y: 50%;
   }
 
   // this is parent links of the currently selected ToC entry
   .toc-link.active-parent {
-   /* background-color: $nav-active-parent-bg; 
+   /* background-color: $nav-active-parent-bg;
     color: $nav-active-parent-text; */
     color: #0a0724;
     background-image: url(../images/arrow-down.png);
-    background-size: 15px;
+    background-size: 12px;
     background-position-x: 95%;
     background-position-y: 50%;
   }
@@ -353,7 +353,7 @@ html, body {
     background-image: none;
   }
 
-  .toc-h2.toc-link.active { 
+  .toc-h2.toc-link.active {
     padding-left: $nav-padding + $nav-indent;
     color: #4a4a4a;
     font-size: 12px;
@@ -426,7 +426,7 @@ html, body {
     img[alt="Logo beta blue"] {
       width: 188px;
       height: 35px;
-      margin-top: 60px; 
+      margin-top: 60px;
     }
     .logoWrapper {
       float:left;
@@ -601,7 +601,7 @@ html, body {
   // fixes webkit rendering bug for some: see #538
   -webkit-transform: translateZ(0);
   // to place content above the dark box
-  position: relative; 
+  position: relative;
   top: 55px;
   z-index: 30;
   border-left: 1px solid black;
@@ -617,7 +617,7 @@ html, body {
     box-sizing: border-box;
     display: block;
 /*@extend %primary-font; */
-  @extend %secondary-font;  
+  @extend %secondary-font;
     @extend %left-col;
   }
 
@@ -638,7 +638,7 @@ html, body {
     padding-bottom: 0.5em;
     margin-bottom: $h1-margin-bottom;
     margin-top: 0;
-    font-family: 'Gotham Medium';
+    font-family: 'Gotham Book';
     /*border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     background-color: #fdfdfd;*/
@@ -657,7 +657,7 @@ html, body {
    /* border-top: 1px solid #ccc; */
     padding-top: 1.2em;
     padding-bottom: 1.2em;
-    font-family: 'Gotham Medium';
+    font-family: 'Gotham Book';
     font-weight: normal!important;
    /* background-image: linear-gradient(to bottom, rgba(#fff, 0.2), rgba(#fff, 0)); */
     padding-top: 151px!important;
@@ -735,6 +735,7 @@ html, body {
   p, li, dt, dd {
     line-height: 1.6;
     margin-top: 0;
+    font-family:"Gotham",sans-serif;
   }
 
   img {
@@ -812,7 +813,7 @@ html, body {
     background-color: $code-bg;
     color: #fff;
     margin: 0;
-    /* width: $examples-width; */ 
+    /* width: $examples-width; */
     width: 46%;
     margin-right: 18px;
     margin-bottom: 10px;
@@ -897,7 +898,7 @@ body.Security .content {
 body.Security .page-wrapper {
   margin-left: 0px;
   padding-left: 35px;
-  padding-right: 35px; 
+  padding-right: 35px;
 }
 
 body.Security .toc-wrapper {
@@ -919,7 +920,7 @@ body.privacy .content {
 body.privacy .page-wrapper {
   margin-left: 0px;
   padding-left: 35px;
-  padding-right: 35px; 
+  padding-right: 35px;
 }
 
 body.privacy .toc-wrapper {
@@ -941,7 +942,7 @@ body.reliability .content {
 body.reliability .page-wrapper {
   margin-left: 0px;
   padding-left: 35px;
-  padding-right: 35px; 
+  padding-right: 35px;
 }
 
 body.reliability .toc-wrapper {
@@ -963,7 +964,7 @@ body.compliance .content {
 body.compliance .page-wrapper {
   margin-left: 0px;
   padding-left: 35px;
-  padding-right: 35px; 
+  padding-right: 35px;
 }
 
 body.compliance .toc-wrapper {
@@ -1060,7 +1061,7 @@ body.compliance #nav-button {
     position: absolute;
     display: none;
   }
-  
+
   .mobileSpan.expand {
     top: 78px;
     display: block!important;
@@ -1068,7 +1069,7 @@ body.compliance #nav-button {
     height: 100vh;
     background-color:#062339;
   }
-  
+
   .mobileSpan.expand li a {
     text-decoration: none;
     outline: none;
@@ -1105,7 +1106,7 @@ body.compliance #nav-button {
   .mobileMenu span:nth-child(1) {
     top: 0;
   }
-  
+
   .mobileMenu span:nth-child(2) {
     top: 10px;
     transform: translate(0, -50%);
@@ -1142,7 +1143,7 @@ body.compliance #nav-button {
     float: none !important;
     margin-left: 0 !important;
     text-align: center;
-    
+
   }
 }
 
@@ -1178,3 +1179,14 @@ img[src="images/triniti-logo-white.svg"] {
   width: 150px;
 }
 /*End change*/
+
+/*2 COL SLATE PAGE*/
+
+.two-col-wrapper .content pre, .two-col-wrapper .content blockquote{
+  float:none;
+  margin-right:0;
+  width:100%;
+}
+.two-col-wrapper .content>h1, .two-col-wrapper .content>h2, .two-col-wrapper .content>h3, .two-col-wrapper .content>h4, .two-col-wrapper .content>h5, .two-col-wrapper .content>h6, .two-col-wrapper .content>p, .two-col-wrapper .content>table, .two-col-wrapper .content>ul, .two-col-wrapper .content>ol, .two-col-wrapper .content>aside, .two-col-wrapper .content>dl {
+  margin-right:auto;
+}
