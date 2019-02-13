@@ -1187,9 +1187,13 @@ img[src="images/triniti-logo-white.svg"] {
 
 .two-col-wrapper .content pre, .two-col-wrapper .content blockquote{
   float:none;
-  margin-right:0;
+  margin-right:auto;
+  margin-left:auto;
   width:100%;
+  max-width:800px;
 }
 .two-col-wrapper .content>h1, .two-col-wrapper .content>h2, .two-col-wrapper .content>h3, .two-col-wrapper .content>h4, .two-col-wrapper .content>h5, .two-col-wrapper .content>h6, .two-col-wrapper .content>p, .two-col-wrapper .content>table, .two-col-wrapper .content>ul, .two-col-wrapper .content>ol, .two-col-wrapper .content>aside, .two-col-wrapper .content>dl {
   margin-right:auto;
+  margin-left:auto;
+  max-width:800px;
 }
