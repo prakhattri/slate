@@ -308,6 +308,10 @@ li.nav-item {
 }
 #operation .doc-item h3{font-size:16px;font-weight:normal;padding-bottom:18px;color:#4a4a4a;font-family:"Gotham Bold",sans-serif;}
 #operation .doc-item p{color:#4a4a4a;font-size:15px;}
+#operation .doc-item .doc-footer{
+    position: absolute;
+    right: 30px;
+    bottom: 20px;}
 #operation .doc-item .doc-footer p{
   color:#4a90e2;text-align:right;
   font-weight:300;font-size:12px;
