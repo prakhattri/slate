@@ -58,7 +58,7 @@ html, body {
 ////////////////////////////////////////////////////////////////////////////////
 // TABLE OF CONTENTS
 ////////////////////////////////////////////////////////////////////////////////
-
+a{color:#4a90e2;}
 #toc > ul > li > a > span {
   float: right;
   background-color: #2484FF;
@@ -311,6 +311,7 @@ html, body {
     background-image: url(../images/arrow-right.png);
     background-repeat: no-repeat;
     background-size: 7px;
+    font-weight:normal;
     background-position-x: 95%;
     background-position-y: 50%;
   }
@@ -318,7 +319,8 @@ html, body {
   .toc-link.active {
     /* background-color: $nav-active-bg; */
     /* color: $nav-active-text; */
-    color: #0a0724;
+    color: #4a90e2;
+    font-weight:bold;
     background-image: url(../images/arrow-down.png);
     background-size: 12px;
     background-position-x: 95%;
@@ -329,7 +331,8 @@ html, body {
   .toc-link.active-parent {
    /* background-color: $nav-active-parent-bg;
     color: $nav-active-parent-text; */
-    color: #0a0724;
+    color: #4a90e2;
+    font-weight:bold;
     background-image: url(../images/arrow-down.png);
     background-size: 12px;
     background-position-x: 95%;
@@ -355,7 +358,7 @@ html, body {
 
   .toc-h2.toc-link.active {
     padding-left: $nav-padding + $nav-indent;
-    color: #4a4a4a;
+    color: #4a90e2;
     font-size: 12px;
     background-image: none;
   }
