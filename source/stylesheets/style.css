@@ -522,6 +522,16 @@ img[src="images/tick.png"] {
 
 
 /*RESPONSIVE FOR HTML PAGES*/
+
+@media (min-width: 991px) and (max-width: 1999px) {
+  #operation .doc-item h3 {
+    padding-bottom: 0px;
+  }
+  #operation .doc-item {
+    padding: 30px 24px 0;
+  }
+}
+
 @media (max-width: 991px) {
   .home__header h1 {
     margin-top: 40px;
@@ -532,6 +542,9 @@ img[src="images/tick.png"] {
   .mobileExpand {
     display:block;
   }
+  .header-offset {
+    margin-left: 16.6%;
+  }
 }
 
 @media (max-width: 820px) {
@@ -540,6 +553,11 @@ img[src="images/tick.png"] {
   }
 }
 
+@media (max-width: 768px) {
+  .header-offset {
+    margin-left: 8.4%;
+  }
+}
 @media (max-width: 720px) {
   img[src="images/triniti-section1.png"] {
     height: 50% !important;

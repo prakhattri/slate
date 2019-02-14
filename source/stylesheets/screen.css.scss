@@ -72,7 +72,7 @@ a{color:#4a90e2;}
   z-index:12;
   top:0;
   left:0;
-  background-color: #062339;
+  background-color:#062339;
   .logo{
     img{
       width:140px;
@@ -1060,11 +1060,21 @@ body.compliance #nav-button {
 }
 
 /* responsive header in slate */
-@media (max-width: 631px) {
-  .toc-header .main-menu {
+@media (max-width: 914px) {
+  .toc-header .main-menu,.toc-header .dropdown {
     display: none;
   }
+  .toc-wrapper {
+    margin-top: -55px;
+  }
 
+  .content {
+    top: 0px;
+  }
+
+  .page-wrapper .lang-selector {
+    top: 77px;
+  }
   .mobileSpan {
     position: absolute;
     display: none;
