@@ -62,7 +62,7 @@ p.subheader{
 }
 .home__header p span{display:block;font-size:28px;}
 .home__header img{
-  max-width:300px;
+  max-width:200px;
   width:100%;
   padding:10px 0;
 }
