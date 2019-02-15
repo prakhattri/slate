@@ -1016,20 +1016,23 @@ Workspace payment mapping. Each workpsace can be configured to used different cr
 
 
 
-### Managing Plans
+## Managing Plans
 
-We have the following paid plans whose charges will be differ.
+We have the following paid plans whose charges will be differ. 
 
-Basic
-Premium
+**Free**
+**Basic**
+**Premium**
+
+User can upgrade from FREE -> BASIC, BASIC -> PREMIUM but can't downgrade
 
 ![alt_text](images/plan-selection.png)
 
-### Managing Invoices
+## Managing Invoices
 
 The Invoice will be generated on 1st of every month for the previous month workspace usage. Each workspace assigned a payment method and can be changed.
 
-![alt_text](images/invoice_listing.png)
+![alt_text](images/invoice-listing.png)
  
 
 Invoice contains the details like total api consumed, domain charges, discount if applicable and taxes and email will be sent to the registed user email id.
