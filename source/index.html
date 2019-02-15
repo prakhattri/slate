@@ -504,6 +504,13 @@
         $('#navbarResponsive').collapse('show');
       }
     });
+    $("a.startPrompt").click(function(e) {
+      console.log('yiqitest');
+      e.preventDefault();
+      var dest = $(this).attr('href');
+      $('html,body').animate({ scrollTop: $(dest).offset().top }, 'slow');
+     });
+
 </script>
 
   </body>
