@@ -241,4 +241,3 @@ As part of Workflow, Webhook responses have some additional fields, namely :
 The HTTP request will contain an X-Hub-Signature header which contains the SHA1 signature of the request payload, using the app secret as the key, and prefixed with sha1=. Your webhook endpoint can verify this signature to validate the integrity and origin of the payload
 
 Please note that the calculation is made on the escaped unicode version of the payload, with lower case hex digits. For example, the string äöå will be escaped to \u00e4\u00f6\u00e5. The calculation also escapes / to \/, < to \u003C, % to \u0025 and @ to \u0040. If you just calculate against the decoded bytes, you will end up with a different signature.
-
